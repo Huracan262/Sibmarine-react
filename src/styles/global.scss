@@ -1,0 +1,42 @@
+@import "variables";
+
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Montserrat", "Roboto", "Calibri", "Arial", sans-serif;
+  font-size: 14px;
+  color: $color-white;
+
+  background-color: $color-main;
+}
+
+.white-block {
+  color: $color-main;
+
+  background-color: $color-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
