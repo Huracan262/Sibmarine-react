@@ -1,0 +1,50 @@
+@import 'variables';
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item {
+  margin-right: 30px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: none;
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  color: inherit;
+  opacity: 50%;
+}
+
+.item:last-child {
+  margin-right: 30px;
+}
+
+.item:hover {
+  text-decoration: underline;
+  opacity: 1;
+
+  cursor: pointer;
+}
+
+.item:active {
+  text-decoration: underline;
+  opacity: 1;
+  color: $color-accent;
+
+  cursor: pointer;
+}
+
+@media (max-width: $width-desktop + 100px) {
+  .item:first-child {
+    display: none;
+  }
+}
+
+//@media (max-width: $width-tablet + 100px) {
+//
+//}

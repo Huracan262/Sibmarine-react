@@ -17,10 +17,8 @@
   background-color: $color-main;
 }
 
-.white-block {
-  color: $color-main;
-
-  background-color: $color-color;
+ul {
+  list-style: none;
 }
 
 img {
@@ -39,4 +37,25 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* Стилизация боковой полосы прокрутки для темной темы */
+/* Ширина боковой полосы */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Цвет боковой полосы */
+::-webkit-scrollbar-track {
+  background: #333; /* Темный цвет фона */
+}
+
+/* Цвет ползунка */
+::-webkit-scrollbar-thumb {
+  background: #666; /* Цвет ползунка */
+}
+
+/* Изменение цвета при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #999; /* Цвет при наведении */
 }

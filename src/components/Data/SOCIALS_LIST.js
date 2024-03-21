@@ -1,16 +1,18 @@
+import {Telegram, WhatsApp, YouTube} from '@mui/icons-material';
+
 const SOCIALS_LIST = [
   {
    name: 'Telegram',
    url: '',
-   logo: ''
+   logo: <Telegram />
   }, {
     name: 'Whatsapp',
     url: '',
-    logo: ''
+    logo: <WhatsApp />
   }, {
     name: 'Youtube',
     url: '',
-    logo: ''
+    logo: <YouTube />
   },
 ]
 

@@ -1,10 +1,11 @@
 import ADVANTAGES_LIST from './Data/ADVANTAGES_LIST'
+import TitleSection from '../UI/Title'
 
 function Advantages() {
   return (
     <section className="page-main__advantages main-advantages">
       <div className="wrapper animation-container">
-        <h2 className="main-advantages__title">Преимущества</h2>
+        <TitleSection className="main-advantages__title">Преимущества</TitleSection>
 
         <ul className="main-advantages__list">
           {ADVANTAGES_LIST.map(item => (

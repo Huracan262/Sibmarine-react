@@ -1,12 +1,14 @@
 import NAVIGATION_LIST from './Data/NAVIGATION_LIST'
+import styles from '../styles/mainNavigation.module.scss'
 
-function MainNavigation() {
+function MainNavigation({className}) {
   return (
-    <nav className="page-header__navigation main-navigation">
-      <ul className="main-navigation__list">
+    <nav className={className}>
+      <ul className={styles.list}>
         {NAVIGATION_LIST.map(item => (
-          <li className="main-navigation__item" key={item}>
-            {item}
+          <li className={styles.item} key={item.label}>
+            {item.icon}
+            {item.label}
           </li>
         ))}
       </ul>

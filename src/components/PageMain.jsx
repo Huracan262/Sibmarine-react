@@ -2,7 +2,7 @@ import Banner from './Banner'
 import Catalog from './Catalog'
 import Service from './Service'
 import Advantages from './Advantages'
-import Parners from './Parners'
+import Partners from './Partners'
 import Geography from './Geography'
 import Clients from './Clients'
 import Warranty from './Warranty'
@@ -15,7 +15,7 @@ function PageMain() {
       <Catalog />
       <Service />
       <Advantages />
-      <Parners />
+      <Partners />
       <Geography />
       <Clients />
       <Warranty />

@@ -1,0 +1,89 @@
+@import "variables";
+@import "wrapper";
+
+.banner {
+  padding: 150px 0 250px;
+
+  .wrapper {
+  }
+}
+
+.title {
+  margin: 0 100px 25px;
+  font-size: 40px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px fade-out(black, 0.8);
+}
+
+.titleDescription {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  left: 100px;
+}
+
+@media (max-width: $width-desktop + 100px) {
+  .banner {
+    padding: 100px 50px 200px;
+
+    .wrapper {
+      //display: flex;
+      align-items: center;
+      gap: 100px;
+    }
+  }
+
+  .title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .titleDescription {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .button {
+    left: 0;
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: $width-tablet + 100px) {
+  .banner {
+    padding: 20px;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .title {
+    //width: 400px;
+    width: auto;
+    text-align: center;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .banner {
+    padding: 20px 0;
+  }
+
+  .title {
+    line-height: 24px;
+  }
+}

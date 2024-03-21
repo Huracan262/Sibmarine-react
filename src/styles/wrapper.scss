@@ -1,3 +1,5 @@
+@import 'variables';
+
 .wrapper {
   width: $width-desktop;
   margin: 0 auto;
@@ -11,7 +13,23 @@
 
   @media (max-width: $width-tablet + 100px) {
     min-width: $width-mobile;
-    max-width: $width-tablet;
-    padding: 0;
+    max-width: $width-tablet + 20px;
+    padding: 20px;
+  }
+}
+
+
+//.banner,
+.catalog,
+.service,
+.advantages,
+.partners,
+.geography,
+.clients,
+.warranty,
+.approval {
+  .wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }

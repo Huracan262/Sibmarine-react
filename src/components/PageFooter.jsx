@@ -15,9 +15,13 @@ function PageFooter() {
             <ul className="page-footer__socials footer-socials">
               {SOCIALS_LIST.map(item => (
                 <li className="footer-socials__item" key={item.name}>
-                  <span className="visually-hidden">{item.name}</span>
+                  {/*Цввет - временный костыль!*/}
+                  <a href={item.url} style={{color: 'white'}}>
+                    {item.logo}
+                    <span className="visually-hidden">{item.name}</span>
+                  </a>
                 </li>
-              ))}
+                ))}
             </ul>
           </div>
 

@@ -1,0 +1,17 @@
+@import "variables";
+
+.title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 36px;
+
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right,
+    $color-white,
+    $color-accent 10%,
+    $color-accent 50%,
+    $color-white 70%,
+    $color-accent) 1;
+  //border-bottom: 1px solid fade-out($color-accent, 0);
+}

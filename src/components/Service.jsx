@@ -1,10 +1,11 @@
 import SERVICE_LIST from './Data/SERVICE_LIST'
+import TitleSection from '../UI/Title'
 
 function Service() {
   return (
     <section className="page-main__service main-service">
       <div className="wrapper animation-container">
-        <h2 className="main-service__title">Услуги</h2>
+        <TitleSection className="main-service__title">Услуги</TitleSection>
 
         <div className="main-service__wrapper">
           {/*Необходимо настроить изображение*/}
