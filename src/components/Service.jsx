@@ -16,7 +16,7 @@ function Service() {
         <TitleSection className="main-service__title">Услуги</TitleSection>
 
         <div className={styles.serviceWrapper}>
-          <img className="Alo" src="../img/service/service-1.jp" width="400" height="400" alt={toggleCurrent.title} />
+          <img className="Alo" src="../img/service/service-2.jpg" width="400" height="400" alt={toggleCurrent.title} />
 
           <ul className={styles.list}>
             {SERVICE_LIST.map(item => (
