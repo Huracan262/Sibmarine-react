@@ -1,2 +1,36 @@
 @import 'variables';
 @import 'wrapper';
+
+.service {
+  .wrapper {
+  }
+}
+
+.serviceWrapper {
+  display: flex;
+  gap: 100px
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+}
+
+.list {
+  outline: 2px solid plum;
+
+  flex-grow: 1;
+}
+
+.item {
+
+}
+
+.current {
+
+}
+
+.button {
+  font-size: 36px;
+  text-align: left;
+}

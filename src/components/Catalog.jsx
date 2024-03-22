@@ -1,7 +1,7 @@
+import {NavLink} from 'react-router-dom'
 import CATALOG_LIST from './Data/CATALOG_LIST'
 import TitleSection from '../UI/Title'
 import styles from '../styles/catalog.module.scss'
-import {NavLink} from 'react-router-dom'
 
 function Catalog() {
   return (
