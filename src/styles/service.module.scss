@@ -1,8 +1,30 @@
-@import 'variables';
-@import 'wrapper';
+@import "variables";
+@import "wrapper";
 
 .service {
+  position: relative;
+  overflow: clip;
+
   .wrapper {
+  }
+
+  &::before {
+    content: "";
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    bottom: -500px;
+    right: 0;
+
+    z-index: -1;
+
+    background-color: $color-main;
+    background-image: url("../img/service/drop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0.2;
+    animation: blink 5s infinite alternate;
   }
 }
 
@@ -11,26 +33,71 @@
   gap: 100px
 }
 
+.description {
+  margin-bottom: 50px;
+}
+
 .img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: auto;
+
+  border-radius: 5px;
+  box-shadow: 0 0 10px fade-out(black, 0.8);
+  filter: saturate(0.3) brightness(1.2);
+
+  opacity: 0.8;
 }
 
 .list {
-  outline: 2px solid plum;
-
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  gap: 40px;
+
+  padding-top: 30px;
+  padding-right: 100px;
 }
 
 .item {
+  border-bottom: 1px solid fade-out(white, 0.9);
+  padding-left: 100px;
 
-}
-
-.current {
-
+  transition: border-color 200ms ease;
 }
 
 .button {
-  font-size: 36px;
-  text-align: left;
+  font-size: 30px;
+  font-style: italic;
+  color: white;
+
+  border: none;
+  background-color: transparent;
+  transition: transform 200ms ease-out;
+
+  cursor: pointer;
+}
+
+.item:hover {
+  border-color: fade-out($color-accent, 0.1);
+
+  &.button {
+    transform: translateX(-50px);
+    //color: $color-accent-two;
+  }
+}
+
+.current .button {
+  color: $color-accent-two;
+  transform: translateX(-50px);
+}
+
+
+@keyframes blink {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 0.1;
+    filter: hue-rotate(-10deg);
+  }
 }

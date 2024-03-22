@@ -5,11 +5,11 @@ const SERVICE_LIST = [
     id: 1
   }, {
     title: 'По электрическому оборудованию',
-    src: 'img/service/service-2.jpg',
+    src: 'img/service/service-1.jpg',
     id: 2
   }, {
     title: 'По корпусным работам',
-    src: 'img/service/service-1.jpg',
+    src: 'img/service/service-2.jpg',
     id: 3
   }
 ]

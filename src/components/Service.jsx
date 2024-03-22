@@ -11,12 +11,15 @@ function Service() {
   }
 
   return (
-    <section className="page-main__service main-service">
+    <section className={styles.service}>
       <div className={styles.wrapper} >
         <TitleSection className="main-service__title">Услуги</TitleSection>
 
+        <p className={styles.description}>Мы оказываем услуги по ... Бла бла бла бла бла бла бла бла бла бла бла</p>
+
         <div className={styles.serviceWrapper}>
-          <img className="Alo" src="../img/service/service-2.jpg" width="400" height="400" alt={toggleCurrent.title} />
+          <img className={styles.img} src={require(`../${toggleCurrent.src}`)} alt={toggleCurrent.title} />
+
 
           <ul className={styles.list}>
             {SERVICE_LIST.map(item => (
