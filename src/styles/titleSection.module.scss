@@ -1,17 +1,59 @@
+//@import "variables";
+//
+//.title {
+//  margin-bottom: 50px;
+//
+//  font-size: 36px;
+//  line-height: 36px;
+//
+//  border-bottom: 1px solid;
+//  border-image: linear-gradient(to right,
+//    $color-white,
+//    $color-accent 10%,
+//    $color-accent 50%,
+//    $color-white 70%,
+//    $color-accent) 1;
+//}
+//
+//
+//@keyframes gradientAnimation {
+//  0% {
+//    background-position: 0 0;
+//  }
+//  100% {
+//    background-position: 100% 0;
+//  }
+//}
+//
+//.title {
+//  animation: gradientAnimation 5s linear infinite;
+//}
+
 @import "variables";
 
 .title {
   margin-bottom: 50px;
-
   font-size: 36px;
   line-height: 36px;
+  position: relative;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, $color-accent, $color-accent-two 10%, $color-accent-two 80%, $color-accent-two) 1;
+}
 
-  border-bottom: 1px solid;
-  border-image: linear-gradient(to right,
-    $color-white,
-    $color-accent 10%,
-    $color-accent 50%,
-    $color-white 70%,
-    $color-accent) 1;
-  //border-bottom: 1px solid fade-out($color-accent, 0);
+/* Анимация для градиентной границы */
+@keyframes gradientAnimation {
+  0% {
+    border-image: linear-gradient(to right, $color-accent, $color-accent-two 10%, $color-accent-two) 1;
+  }
+  50% {
+    border-image: linear-gradient(to right, $color-accent-two, $color-accent 40%, $color-accent 60%, $color-accent-two 90%, $color-accent) 1;
+  }
+  100% {
+    border-image: linear-gradient(to right, $color-accent-two, $color-accent 10%, $color-accent 20%, $color-accent-two 50%, $color-accent) 1;
+  }
+}
+
+/* Применение анимации к границе */
+.title {
+  animation: gradientAnimation 5s linear infinite alternate;
 }

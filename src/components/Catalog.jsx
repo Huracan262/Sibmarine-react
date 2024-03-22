@@ -19,7 +19,7 @@ function Catalog() {
                   <NavLink className={styles.link}>Подробнее</NavLink>
                 </figcaption>
 
-                <img className={styles.img} src="{item.src}" width="440" height="400" alt={item.title} />
+                <img className={styles.img} src={item.src} width="440" height="400" alt={item.title} />
               </figure>
             </li>
           ))}
