@@ -3,7 +3,7 @@
 
 .partners {
   .wrapper {
-
+    position: relative;
   }
 }
 
@@ -11,11 +11,31 @@
 
 }
 
+//todo Роза ветров
+//.list::before {
+//  content: "";
+//  width: 1000px;
+//  height: 1000px;
+//  position: absolute;
+//  top: 0;
+//  left: -500px;
+//
+//  z-index: -1;
+//  background-color: $color-main;
+//  background-image: url("../img/partners/drop.png");
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//
+//  transform: rotate(20deg);
+//  opacity: 0.1;
+//}
+
 .item {
   width: 150px;
   height: 150px;
   margin: 0 50px;
   opacity: 0.2;
+  transition: opacity 50ms ease-out;
 }
 
 .item:hover {

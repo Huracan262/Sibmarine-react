@@ -1,0 +1,36 @@
+@import "wrapper";
+@import "variables";
+
+.clients {
+  .wrapper{
+
+  }
+}
+
+.container{
+  display: flex;
+  gap: 50px;
+}
+
+.description {
+  width: 600px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.item {
+  width: 120px;
+  height: 120px;
+
+  opacity: 0.2;
+  transition: opacity 50ms ease-out;
+}
+
+.item:hover {
+  opacity: 0.6;
+}

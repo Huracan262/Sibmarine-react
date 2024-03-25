@@ -1,0 +1,21 @@
+@import "variables";
+@import "wrapper";
+
+.geography {
+  .wrapper {
+    position: relative;
+  }
+}
+
+.description {
+  width: 500px;
+  position: absolute;
+}
+
+.map {
+}
+
+.img {
+  width: 100%;
+  opacity: 0.1;
+}

@@ -26,6 +26,7 @@
   border-radius: 10px;
   box-shadow: 0 0 5px fade-out(black, 0.8);
   transition: transform 20ms ease;
+  overflow: hidden;
 }
 
 .item:hover {
@@ -138,6 +139,9 @@
   }
 }
 
+// TODO Нужно отрегулировать блок под разрешение 320рх
 @media (max-width: $width-tablet + 100px) {
-
+  .list {
+    grid-template-columns: 1fr;
+  }
 }

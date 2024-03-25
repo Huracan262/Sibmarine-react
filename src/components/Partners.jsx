@@ -10,7 +10,7 @@ function Partners () {
         <Title>Партнеры</Title>
 
         <ul className={styles.list}>
-          <Marquee speed="30" gradient="gradient" gradientColor="#162639" >
+          <Marquee speed="30" gradient="gradient" gradientColor="#162639" style={{overflow: 'clip'}} >
             {PARTNERS_LIST.map(item => (
               <li className={styles.item} key={item.name}>
                 <img className={styles.img} src={require(`../${item.src}`)} alt={item.name} />
