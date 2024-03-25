@@ -1,17 +1,22 @@
+import Marquee from 'react-fast-marquee'
 import PARTNERS_LIST from './Data/PARTNERS_LIST'
+import styles from '../styles/partners.module.scss'
+import Title from '../UI/Title'
 
 function Partners () {
   return (
-    <section className="page-main__partners main-partners">
-      <div className="wrapper animation-container">
-        <h2 className="main-partners__title">Партнеры</h2>
+    <section className={styles.partners}>
+      <div className={styles.wrapper}>
+        <Title>Партнеры</Title>
 
-        <ul className="main-partners__list">
-          {PARTNERS_LIST.map(item => (
-            <li className="main-partners__item" key={item.name}>
-              {item.name}
-            </li>
-          ))}
+        <ul className={styles.list}>
+          <Marquee speed="30" gradient="gradient" gradientColor="#162639" >
+            {PARTNERS_LIST.map(item => (
+              <li className={styles.item} key={item.name}>
+                <img className={styles.img} src={require(`../${item.src}`)} alt={item.name} />
+              </li>
+            ))}
+          </Marquee>
         </ul>
       </div>
     </section>

@@ -1,0 +1,27 @@
+@import "variables";
+@import "wrapper";
+
+.partners {
+  .wrapper {
+
+  }
+}
+
+.list {
+
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  margin: 0 50px;
+  opacity: 0.2;
+}
+
+.item:hover {
+  opacity: 0.6;
+}
+
+.rfm-marquee-container {
+  overflow-x: clip !important;
+}

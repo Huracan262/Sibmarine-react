@@ -1,47 +1,46 @@
 const PARTNERS_LIST = [
   {
     name: 'Газпром',
-    img: '',
+    src: 'img/partners/partner-1.png',
     url: ''
   }, {
     name: 'Норникель',
-    img: '',
+    src: 'img/partners/partner-2.png',
     url: ''
   }, {
     name: 'Водоход',
-    img: '',
+    src: 'img/partners/partner-3.png',
     url: ''
   }, {
     name: 'Енисейскоре речное пароходство',
-    img: '',
+    src: 'img/partners/partner-4.png',
     url: ''
   }, {
     name: 'Речтранслогистик',
-    img: '',
+    src: 'img/partners/partner-5.png',
     url: ''
   }, {
     name: 'Транзит-св',
-    img: '',
+    src: 'img/partners/partner-6.png',
     url: ''
   }, {
     name: 'Алроса',
-    img: '',
+    src: 'img/partners/partner-7.png',
     url: ''
-  }, {
-    name: 'Группа Иллим',
-    img: '',
-    url: ''
-  }, {
-    name: 'ВСРП',
-    img: '',
-    url: ''
-  }, {
-    name: 'Ванкор' +
-      '' +
-      '',
-    img: '',
-    url: ''
-  }
+  },
+  // {
+  //   name: 'Группа Иллим',
+  //   src: 'img/partners/partner-8.png',
+  //   url: ''
+  // },{
+  //   name: 'ВСРП',
+  //   src: 'img/partners/partner-9.png',
+  //   url: ''
+  // }, {
+  //   name: 'Ванкор',
+  //   src: 'img/partners/partner-10.png',
+  //   url: ''
+  // }
 ]
 
 export default PARTNERS_LIST
