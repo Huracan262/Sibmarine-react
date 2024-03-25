@@ -8,10 +8,12 @@ function Advantages() {
       <div className={styles.wrapper}>
         <TitleSection className="main-advantages__title">Преимущества</TitleSection>
 
-        <ul className="main-advantages__list">
+        <ul className={styles.list}>
           {ADVANTAGES_LIST.map(item => (
-            <li className="main-advantages__item" key={item}>
-              {item}
+            <li className={styles.item} key={item.id}>
+              <div className={styles.iconBlock}>{item.icon}</div>
+              <h3 className={styles.title}>{item.title}</h3>
+              <img className={styles.img} src={require(`../${item.src}`)} alt={item.title} />
             </li>))}
         </ul>
       </div>

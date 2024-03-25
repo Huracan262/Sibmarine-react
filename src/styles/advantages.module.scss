@@ -8,3 +8,133 @@
 
   }
 }
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.item {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 5px fade-out(black, 0.8);
+  transition: transform 20ms ease;
+}
+
+.item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 5px fade-out(black, 0.5);
+}
+
+.item::before {
+  content: "SIBMARINE";
+  width: max-content;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 75px;
+
+  font-family: "Roboto", sans-serif;
+
+  opacity: 0.2;
+  z-index: 2;
+}
+
+.item:hover::before {
+  color: $color-accent;
+  opacity: 1;
+}
+
+.title {
+  height: 90px;
+  padding: 10px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  color: $color-main;
+  z-index: 1;
+  background-color: fade-out(white, 0.5);
+}
+
+.item:hover .title {
+  color: white;
+  background-image: linear-gradient(to right, fade-out($color-accent, 0.5), fade-out($color-accent-two, 0.5));
+}
+
+.title::before {
+  content: "";
+  width: 150px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 75px;
+  background-color: $color-accent;
+  z-index: 2;
+}
+
+.iconBlock {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40px;
+  left: 40px;
+
+  font-size: 30px;
+  color: $color-accent;
+
+  border-radius: 50%;
+  box-shadow: 0 0 5px fade-out(black, 0.8);
+  background-color: white;
+  z-index: 1;
+}
+
+.item:hover .iconBlock {
+  opacity: 0;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+
+  //z-index: -1;
+
+  filter: grayscale(100%);
+  opacity: 0.05;
+  background-color: #6c81a0;
+}
+
+.item:hover .img {
+  opacity: 0.5;
+}
+
+@media (max-width: $width-desktop + 100px) {
+  .list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: $width-tablet + 100px) {
+
+}

@@ -91,7 +91,6 @@
   transform: translateX(-50px);
 }
 
-
 @keyframes blink {
   from {
     opacity: 0.2;
@@ -99,5 +98,47 @@
   to {
     opacity: 0.1;
     filter: hue-rotate(-10deg);
+  }
+}
+
+@media (max-width: $width-desktop + 100px) {
+  .list {
+    padding: 0;
+  }
+
+  .item {
+    border-bottom: 1px solid fade-out(white, 0.9);
+    padding-left: 0;
+
+    transition: border-color 200ms ease;
+  }
+
+  .button {
+    font-size: 22px;
+  }
+
+  .current .button {
+    transform: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .serviceWrapper {
+    gap: 50px;
+  }
+
+  .list {
+    gap: 50px;
+  }
+
+  .button {
+    font-style: normal;
+    text-align: left;
+  }
+}
+
+@media (max-width: $width-tablet + 100px) {
+  .img {
+    display: none;
   }
 }
