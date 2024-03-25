@@ -18,7 +18,7 @@ const ADVANTAGES_LIST = [
     src: 'img/advantages/advantages-5.jpg'
   }, {
     id: 4,
-    title: 'Техническая поддержка 24/7',
+    title: 'Техническая поддержка',
     icon: <RiCustomerService2Fill />,
     src: 'img/advantages/advantages-2.jpg'
   }, {
