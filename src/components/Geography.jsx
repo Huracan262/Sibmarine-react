@@ -1,5 +1,6 @@
 import Title from '../UI/Title'
 import styles from '../styles/geography.module.scss'
+import GEOGRAPHY_LIST from './Data/GEOGRAPHY_LIST'
 
 function Geography() {
   return (
@@ -15,7 +16,11 @@ function Geography() {
         <div className={styles.map}>
           <img className={styles.img} src={require('../img/map.png')} alt="Карта работ по россии" />
 
-          <div className={styles.points}></div>
+          <ul className={styles.points}>
+            {GEOGRAPHY_LIST.map(item => {
+              return <li className={styles.point} style={{top: `${item.yСoordinate}px`, left:`${item.хСoordinate}px`}}>{item.city}</li>
+            })}
+          </ul>
         </div>
       </div>
     </section>
