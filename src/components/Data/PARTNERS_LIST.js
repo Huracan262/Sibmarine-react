@@ -1,46 +1,29 @@
 const PARTNERS_LIST = [
   {
-    name: 'Газпром',
-    src: 'img/partners/partner-1.png',
-    url: ''
+    title: 'Каскад',
+    src: 'img/partners/partner-3.png'
   }, {
-    name: 'Норникель',
-    src: 'img/partners/partner-2.png',
-    url: ''
+    title: 'МСА',
+    src: 'img/partners/partner-5.png'
   }, {
-    name: 'Водоход',
-    src: 'img/partners/partner-3.png',
-    url: ''
+    title: 'Морская техника',
+    src: 'img/partners/partner-4.png'
   }, {
-    name: 'Енисейскоре речное пароходство',
-    src: 'img/partners/partner-4.png',
-    url: ''
+    title: 'Аргут',
+    src: 'img/partners/partner-2.png'
   }, {
-    name: 'Речтранслогистик',
-    src: 'img/partners/partner-5.png',
-    url: ''
+    title: 'Фуруно',
+    src: 'img/partners/partner-8.png'
   }, {
-    name: 'Транзит-св',
-    src: 'img/partners/partner-6.png',
-    url: ''
+    title: 'Полар',
+    src: 'img/partners/partner-1.png'
   }, {
-    name: 'Алроса',
-    src: 'img/partners/partner-7.png',
-    url: ''
-  },
-  // {
-  //   name: 'Группа Иллим',
-  //   src: 'img/partners/partner-8.png',
-  //   url: ''
-  // },{
-  //   name: 'ВСРП',
-  //   src: 'img/partners/partner-9.png',
-  //   url: ''
-  // }, {
-  //   name: 'Ванкор',
-  //   src: 'img/partners/partner-10.png',
-  //   url: ''
-  // }
+    title: 'НСР',
+    src: 'img/partners/partner-6.png'
+  }, {
+    title: 'Транзас навигатор',
+    src: 'img/partners/partner-7.png'
+  }
 ]
 
 export default PARTNERS_LIST
