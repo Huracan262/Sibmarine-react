@@ -1,0 +1,33 @@
+@import "variables";
+@import "wrapper";
+
+.warranty {
+  position: relative;
+  color: $color-main;
+  overflow: hidden;
+
+  background-color: $color-white;
+  .wrapper{
+  }
+}
+
+.list {
+  position: relative;
+}
+
+.warranty::before {
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: -450px;
+  left: -450px;
+
+  z-index: 0;
+  background-image: url("../img/drop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transform: rotate(20deg);
+  opacity: 0.05;
+}

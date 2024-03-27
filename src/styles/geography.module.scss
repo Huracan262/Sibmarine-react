@@ -30,11 +30,52 @@
 }
 
 .point {
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
 
-  background-color: #2fb5fb;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, $color-accent, $color-accent-two);
+  box-shadow: 0 0 10px fade-out(black, 0.2);
+
+  cursor: pointer;
+}
+
+.point::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  left: 50%;
+  margin-left: -25px;
+
+  border-radius: 50%;
+
+  background-color: white;
+  opacity: 0.15;
+  z-index: -1;
+  animation: blinkPoint 4000ms ease infinite;
+}
+
+.city {
+  position: relative;
+  left: 30px;
+}
+
+@keyframes blinkPoint {
+  from {
+    transform: scale(0.2);
+
+  } 60% {
+    opacity: 0.15;
+  }
+  to {
+    opacity: 0;
+  }
 }

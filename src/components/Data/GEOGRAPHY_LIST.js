@@ -2,13 +2,13 @@ const GEOGRAPHY_LIST = [
   {
     city: "Красноярск",
     description: "Починили две стиральные машины за пачку сигарет",
-    хСoordinate: 0,
-    yСoordinate: 0,
+    хСoordinate: 700,
+    yСoordinate: 670,
   }, {
     city: "Иркутск",
     description: "Сьели деда",
-    хСoordinate: 500,
-    yСoordinate: 500,
+    хСoordinate: 830,
+    yСoordinate: 720,
   }
 ]
 

@@ -1,0 +1,22 @@
+@import "variables";
+@import "wrapper";
+
+.footer {
+  .wrapper {
+
+  }
+}
+
+.container {
+  width: 400px;
+  display: flex;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: #6c81a0;
+}
+
+.mainList {
+}

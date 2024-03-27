@@ -1,21 +1,22 @@
-import Logo from '../UI/Logo'
+import LogoFooter from '../UI/LogoFooter'
 import Contacts from './Contacts'
 import SOCIALS_LIST from './Data/SOCIALS_LIST'
 import Copyright from './Copyright'
+import styles from '../styles/pageFooter.module.scss'
 
 function PageFooter() {
   return (
-    <footer className="page__footer page-footer">
-      <div className="wrapper">
-        <div className="page-footer__wrapper-row">
-          <div className="page-footer__wrapper">
-            <Logo size="100" />
-            <Contacts />
+    <footer className={styles.footer}>
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <div className={styles.contacts}>
+            <LogoFooter size="150" />
+            <Contacts style={styles} />
 
-            <ul className="page-footer__socials footer-socials">
+            <ul>
               {SOCIALS_LIST.map(item => (
                 <li className="footer-socials__item" key={item.name}>
-                  {/*Цввет - временный костыль!*/}
+                  {/*Цвет - временный костыль!*/}
                   <a href={item.url} style={{color: 'white'}}>
                     {item.logo}
                     <span className="visually-hidden">{item.name}</span>

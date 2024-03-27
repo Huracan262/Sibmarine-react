@@ -1,8 +1,11 @@
+import styles from '../styles/approval.module.scss'
+import Title from '../UI/Title'
+
 function Approval() {
   return (
-    <section className="page-main__approval main-approval">
-      <div className="wrapper animation-container">
-        <h2 className="main-approval__title">Одобрение компании</h2>
+    <section className={styles.approval}>
+      <div className={styles.wrapper}>
+        <Title>Одобрение компании</Title>
 
         <figure className="main-approval__certificate">
           <img className="certificate" src="" width="" height="" alt=""/>

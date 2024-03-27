@@ -1,10 +1,13 @@
+import styles from '../styles/warranty.module.scss'
+import Title from '../UI/Title'
+
 function Warranty() {
   return (
-    <section className="page-main__warranty main-warranty">
-      <div className="wrapper animation-container">
-        <h2 className="main-warranty__title">Гарантии</h2>
+    <section className={styles.warranty}>
+      <div className={styles.wrapper}>
+        <Title>Гарантии</Title>
 
-        <ul className="main-warranty__list">
+        <ul className={styles.list}>
           <li className="main-warranty__item">
             <h3 className="main-warranty__item-title">Гарантия на услуги</h3>
 
