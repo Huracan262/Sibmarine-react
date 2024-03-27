@@ -2,12 +2,43 @@
 @import "wrapper";
 
 .advantages {
+  position: relative;
   color: $color-main;
   background-color: white;
+  overflow: hidden;
+
   .wrapper {
 
   }
 }
+
+// todo Кораблик
+//.advantages::before {
+//  content: "";
+//  width: 170px;
+//  height: 170px;
+//  position: absolute;
+//  top: -22px;
+//  right: 300px;
+//
+//  z-index: 0;
+//
+//  background-image: url("../img/advantages/drop.png");
+//  background-repeat: no-repeat;
+//  background-size: contain;
+//  opacity: 0.2;
+//
+//  transform: scaleX(-1);
+//  animation: ship 40s linear infinite;
+//}
+//
+//@keyframes ship {
+//  from {
+//    transform: translateX(0);
+//  } to {
+//        transform: translateX(-800px);
+//  }
+//}
 
 .list {
   display: grid;

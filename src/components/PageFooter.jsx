@@ -13,11 +13,11 @@ function PageFooter() {
             <LogoFooter size="150" />
             <Contacts style={styles} />
 
-            <ul>
+            <ul className={styles.socialsList}>
               {SOCIALS_LIST.map(item => (
-                <li className="footer-socials__item" key={item.name}>
+                <li className={styles.socialsItem} key={item.name}>
                   {/*Цвет - временный костыль!*/}
-                  <a href={item.url} style={{color: 'white'}}>
+                  <a className={styles.socialsLink} href={item.url}>
                     {item.logo}
                     <span className="visually-hidden">{item.name}</span>
                   </a>
@@ -26,7 +26,7 @@ function PageFooter() {
             </ul>
           </div>
 
-          <div className="page-footer__wrapper-navigation">
+          <div className={styles.footerLists}>
             <div className="page-footer__navigation footer-navigation">
               <h3 className="footer-navigation__title">Оборудование</h3>
 

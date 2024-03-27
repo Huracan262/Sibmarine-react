@@ -3,20 +3,51 @@
 
 .footer {
   .wrapper {
-
   }
 }
 
 .container {
-  width: 400px;
   display: flex;
+  justify-content: space-between;
 }
 
 .contacts {
+  outline: 1px solid tomato;
+  
   display: flex;
   flex-direction: column;
-  background-color: #6c81a0;
 }
 
 .mainList {
+}
+
+.socialsList {
+  display: flex;
+  gap: 10px;
+}
+
+.socialsItem {
+
+}
+
+.socialsLink {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-accent;
+
+  border-radius: 50%;
+  background-color: white;
+}
+
+.footerLists {
+  outline: 1px solid tomato;
+
+  display: flex;
+  gap: 50px;
 }
