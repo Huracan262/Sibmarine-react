@@ -10,3 +10,12 @@
   color: $color-white;
   text-decoration: none;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.authorLink {
+  margin-left: 5px;
+}

@@ -9,22 +9,22 @@
 }
 
 .title {
-  margin: 0 100px 25px;
-  font-size: 40px;
-  line-height: 30px;
+  margin: 0 50px 25px;
+  font-size: 60px;
+  line-height: 50px;
   text-transform: uppercase;
   text-shadow: 0 0 10px fade-out(black, 0.8);
 }
 
 .titleDescription {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 400;
 }
 
 .button {
   display: inline-block;
   position: relative;
-  left: 100px;
+  left: 50px;
 }
 
 @media (max-width: $width-desktop + 100px) {

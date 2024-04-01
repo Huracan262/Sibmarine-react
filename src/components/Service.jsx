@@ -15,7 +15,7 @@ function Service() {
       <div className={styles.wrapper} >
         <TitleSection className="main-service__title">Услуги</TitleSection>
 
-        <p className={styles.description}>Мы оказываем услуги по ... Бла бла бла бла бла бла бла бла бла бла бла</p>
+        <p className={styles.description}>Мы специализируемся на предоставлении высококачественных услуг в следующих направлениях:</p>
 
         <div className={styles.serviceWrapper}>
           <img className={styles.img} src={require(`../${toggleCurrent.src}`)} alt={toggleCurrent.title} />

@@ -1,0 +1,66 @@
+@import "variables";
+@import "wrapper";
+
+.map {
+  width: 1000px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 50px white;
+}
+
+.map::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: fade-out(black, 0.5);
+}
+
+.el1 {
+  color: #eee;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+}
+
+.el2 {
+  color: #eee;
+  font-size: 12px;
+  position: absolute;
+  top: 14px;
+}
+
+.el3 {
+  color: #eee;
+  font-size: 12px;
+  position: absolute;
+  top: 28px;
+}
+
+.el4 {
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  top: -10px;
+
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+
+}
+
+.buttonClose {
+  color: tomato;
+  font-size: 50px;
+}
