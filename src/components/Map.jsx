@@ -1,10 +1,24 @@
-import {useContext, useState} from 'react'
+import {useContext, useEffect} from 'react'
 import {BsX} from "react-icons/bs"
 import styles from '../styles/map.module.scss'
 import MapContext from '../contexts/MapContext'
 
 function Map() {
   const {toggleMap, setToggleMap} = useContext(MapContext)
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setToggleMap(false)
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [toggleMap, setToggleMap])
 
   if (toggleMap)
   return (
