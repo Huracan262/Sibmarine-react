@@ -20,7 +20,7 @@ function PageMain() {
       <Geography />
       <Clients />
       <Warranty />
-      <Approval />
+      {/*<Approval />*/}
       <Map />
     </main>
   )

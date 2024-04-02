@@ -29,20 +29,33 @@
   left: 0;
 }
 
-.point {
-  width: 20px;
+.container {
+  min-width: 20px;
   height: 20px;
+  padding: 15px 10px 15px 5px;
   display: flex;
   align-items: center;
   position: absolute;
   top: 0;
   left: 0;
 
+  border-radius: 15px;
+
+  cursor: pointer;
+}
+
+.point {
+  width: 20px;
+  height: 20px;
+  position: relative;
+
   border-radius: 50%;
   background-image: linear-gradient(to right, $color-accent, $color-accent-two);
   box-shadow: 0 0 10px fade-out(black, 0.2);
 
-  cursor: pointer;
+
+
+  opacity: 0.6;
 }
 
 .point::before {
@@ -56,26 +69,70 @@
   margin-left: -25px;
 
   border-radius: 50%;
-
+  border-top: 1px solid $color-accent;
   background-color: white;
+
   opacity: 0.15;
   z-index: -1;
+  pointer-events: none;
+
   animation: blinkPoint 4000ms ease infinite;
 }
 
 .city {
-  position: relative;
-  left: 30px;
+  margin-left: 15px;
 }
 
 @keyframes blinkPoint {
   from {
-    transform: scale(0.2);
+    transform: scale(0.4);
 
   } 60% {
     opacity: 0.15;
   }
   to {
     opacity: 0;
+  }
+}
+
+.pointDescription {
+  display: none;
+  width: 250px;
+  min-height: 100px;
+  padding: 10px;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+
+  font-family: "Roboto", sans-serif;
+  color: lightgray;
+
+  border-radius: 5px;
+  background-color: fade-out(black, 0.6);
+
+  opacity: 0;
+  z-index: 1;
+
+  transition: opacity 500ms ease-out;
+}
+
+.pointDescription::before {
+  content: "";
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+
+  z-index: -1;
+}
+
+.container:hover {
+  opacity: 1;
+
+  .pointDescription {
+    display: block;
+    opacity: 1;
+    transition: opacity 100ms ease;
   }
 }

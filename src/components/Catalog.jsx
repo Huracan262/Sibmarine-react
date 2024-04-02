@@ -10,7 +10,6 @@ function Catalog() {
         <TitleSection className="main-catalog__title">Каталог</TitleSection>
 
         <ul className={styles.list}>
-
           {CATALOG_LIST.map(item => (
             <li className={styles.item} key={item.title}>
               <figure className={styles.figure}>
@@ -23,7 +22,6 @@ function Catalog() {
               </figure>
             </li>
           ))}
-
         </ul>
 
         <NavLink className={styles.linkCatalog}>Все категории</NavLink>

@@ -8,7 +8,7 @@ function Logo({ size, description = false }) {
       <Link className="page-header__logo" to="/">
         <LogoImage width={size} height={size} />
       </Link>
-      {description && <strong className={styles.description}>Продажа и обслуживание судового оборудования</strong>}
+      {description && <strong className={styles.description}>Продажа оборудования и обслуживание водного транспорта</strong>}
     </>
 
   )

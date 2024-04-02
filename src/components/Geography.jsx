@@ -18,7 +18,13 @@ function Geography() {
 
           <ul className={styles.points}>
             {GEOGRAPHY_LIST.map(item => {
-              return <li className={styles.point} style={{top: `${item.yСoordinate}px`, left:`${item.хСoordinate}px`}}><span className={styles.city}>{item.city}</span></li>
+              return (
+                <li className={styles.container} style={{top: `${item.yСoordinate}px`, left:`${item.хСoordinate}px`}}>
+                  <div className={styles.point}></div>
+                  <div className={styles.pointDescription}>{item.description}</div>
+                  <span className={styles.city}>{item.city}</span>
+                </li>
+              )
             })}
           </ul>
         </div>
