@@ -4,10 +4,15 @@ import PageMain from './components/PageMain';
 import NotFound from './components/NotFound';
 import PageCatalog from './components/PageCatalog';
 import './styles/app.scss';
+import MapContext from './contexts/MapContext'
+import {useState} from 'react'
 
 function App() {
+  const [toggleMap, setToggleMap] = useState(true)
+
   return (
     <BrowserRouter>
+      <MapContext.Provider value={{toggleMap, setToggleMap}}>
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<PageMain />} />
@@ -15,6 +20,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+      </MapContext.Provider>
     </BrowserRouter>
   );
 }

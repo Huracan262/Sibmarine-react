@@ -2,19 +2,25 @@
 @import "wrapper";
 
 .footer {
+
   .wrapper {
-    padding: 50px 20px;
+    border-top: 5px solid $color-accent;
+    padding: 50px 20px 0;
+    transform: translateY(-5px);
   }
 }
 
 .container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .contacts {
+  width: 400px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .mainList {
@@ -30,21 +36,59 @@
 }
 
 .socialsLink {
-  width: 40px;
-  height: 40px;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  color: $color-accent;
+  color: white;
+  font-size: 30px;
 
   border-radius: 50%;
-  background-color: white;
+  //background-color: white;
+
+  opacity: 0.4;
+
+  &:hover {
+    color: $color-white;
+
+    border-radius: 50%;
+    //background-color: $color-accent;
+    box-shadow: 0 0 10px fade-out(white, 0.8);
+    opacity: 1;
+  }
 }
 
 .footerLists {
+  padding-top: 40px;
   display: flex;
+  justify-content: flex-end;
   gap: 50px;
+}
+
+.footerListContainer {
+
+}
+
+.footerListTitle {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+
+  text-transform: uppercase;
+
+  border-bottom: 1px solid $color-accent;
+}
+
+.footerList {
+  width: 250px;
+}
+
+.footerListItem {
+  margin-bottom: 10px;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
 }

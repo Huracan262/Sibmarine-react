@@ -1,18 +1,18 @@
-import {Telegram, WhatsApp, YouTube} from '@mui/icons-material';
+import { FaYoutube, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
 const SOCIALS_LIST = [
   {
    name: 'Telegram',
    url: '',
-   logo: <Telegram />
+   logo: <FaTelegramPlane />
   }, {
     name: 'Whatsapp',
     url: '',
-    logo: <WhatsApp />
+    logo: <FaWhatsapp />
   }, {
     name: 'Youtube',
     url: '',
-    logo: <YouTube />
+    logo: <FaYoutube />
   },
 ]
 

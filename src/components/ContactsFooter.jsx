@@ -1,4 +1,4 @@
-import styles from '../styles/contacts.module.scss'
+import styles from '../styles/contactsFooter.module.scss'
 import MapContext from '../contexts/MapContext'
 import {useContext} from 'react'
 

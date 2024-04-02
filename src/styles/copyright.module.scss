@@ -2,20 +2,36 @@
 @import "wrapper";
 
 .copyright {
-  display: flex;
-  flex-direction: column;
-}
-
-.text, .link, .author, .authorLink {
-  color: $color-white;
-  text-decoration: none;
-}
-
-.container {
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  border-top: 1px solid fade-out(dimgray, 0.8);
+}
+
+.text, .link, .description, .authorLink {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  color: grey;
+  opacity: 0.5;
+}
+
+.text {
+  width: 50%;
+  align-self: center;
 }
 
 .authorLink {
   margin-left: 5px;
+
+}
+
+.link:hover,
+.authorLink:hover {
+  text-decoration: underline;
+  opacity: 1;
 }

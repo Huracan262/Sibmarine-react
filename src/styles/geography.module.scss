@@ -2,8 +2,43 @@
 @import "wrapper";
 
 .geography {
+  position: relative;
+  overflow-x: clip;
+
   .wrapper {
     position: relative;
+  }
+
+  &::before {
+    content: "";
+    width: 800px;
+    height: 1000px;
+    position: absolute;
+    top: -250px;
+    left: -350px;
+
+    background-image: url("../img/geography/drop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    z-index: -3;
+    opacity: 0.03;
+  }
+
+  &::after {
+    content: "";
+    width: 800px;
+    height: 1000px;
+    position: absolute;
+    top: 750px;
+    right: -450px;
+
+    background-image: url("../img/geography/drop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    z-index: -3;
+    opacity: 0.03;
   }
 }
 
@@ -81,6 +116,7 @@
 
 .city {
   margin-left: 15px;
+  opacity: 0.6;
 }
 
 @keyframes blinkPoint {
@@ -128,7 +164,10 @@
 }
 
 .container:hover {
-  opacity: 1;
+
+  .point, .city {
+    opacity: 1;
+  }
 
   .pointDescription {
     display: block;

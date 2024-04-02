@@ -7,8 +7,8 @@ function Banner() {
       <div className={styles.wrapper}>
         <h1 className={styles.title}>
           Полный цикл<br/>
-          <span className={styles.titleDescription}>обслуживания водного транспорта</span><br />
-          от проектирования до реализации
+          <span className={styles.titleDescription}>обслуживания водного транспорта<br />
+          от проектирования до реализации</span>
         </h1>
 
         <Button className={styles.button} variant="contained">Оставить заявку</Button>

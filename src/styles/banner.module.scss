@@ -9,7 +9,9 @@
 }
 
 .title {
-  margin: 0 50px 25px;
+  //outline: 1px solid tomato;
+  width: 1200px;
+  //margin: 0 50px 25px;
   font-size: 60px;
   line-height: 50px;
   text-transform: uppercase;
@@ -18,13 +20,13 @@
 
 .titleDescription {
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .button {
   display: inline-block;
   position: relative;
-  left: 50px;
+  //left: 50px;
 }
 
 @media (max-width: $width-desktop + 100px) {

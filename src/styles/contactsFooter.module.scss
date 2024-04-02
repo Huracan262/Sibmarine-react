@@ -1,0 +1,57 @@
+@import 'variables';
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.item {
+  margin-right: 30px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: none;
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  color: inherit;
+
+  border: none;
+  background-color: transparent;
+
+  opacity: 50%;
+}
+
+.item:last-child {
+  margin-right: 30px;
+}
+
+.item:hover {
+  text-decoration: underline;
+  opacity: 1;
+
+  cursor: pointer;
+}
+
+.item:active {
+  text-decoration: underline;
+  opacity: 1;
+  color: $color-accent;
+
+  cursor: pointer;
+}
+
+@media (max-width: $width-desktop + 100px) {
+  .item:first-child {
+    display: none;
+  }
+}
+
+//@media (max-width: $width-tablet + 100px) {
+//
+//}

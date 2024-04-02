@@ -1,8 +1,8 @@
 import LogoFooter from '../UI/LogoFooter'
-import Contacts from './Contacts'
 import SOCIALS_LIST from './Data/SOCIALS_LIST'
 import Copyright from './Copyright'
 import styles from '../styles/pageFooter.module.scss'
+import ContactsFooter from './ContactsFooter'
 
 function PageFooter() {
   return (
@@ -10,13 +10,13 @@ function PageFooter() {
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles.contacts}>
-            <LogoFooter size="150" />
-            <Contacts style={styles} />
+            <LogoFooter size="170" />
+
+            <ContactsFooter />
 
             <ul className={styles.socialsList}>
               {SOCIALS_LIST.map(item => (
                 <li className={styles.socialsItem} key={item.name}>
-                  {/*Цвет - временный костыль!*/}
                   <a className={styles.socialsLink} href={item.url}>
                     {item.logo}
                     <span className="visually-hidden">{item.name}</span>
@@ -27,55 +27,55 @@ function PageFooter() {
           </div>
 
           <div className={styles.footerLists}>
-            <div className="page-footer__navigation footer-navigation">
-              <h3 className="footer-navigation__title">Оборудование</h3>
+            <div className={styles.footerListContainer}>
+              <h3 className={styles.footerListTitle}>Оборудование</h3>
 
-              <ul className="footer-navigation__list">
-                <li className="footer-navigation__item">
+              <ul className={styles.footerList}>
+                <li className={styles.footerListItem}>
                   <a className="footer-navigation__item-link">Радио-навигационное</a>
                 </li>
-                <li className="footer-navigation__item">
+                <li className={styles.footerListItem}>
                   <a className="footer-navigation__item-link">Электрическое</a>
                 </li>
-                <li className="footer-navigation__item">
+                <li className={styles.footerListItem}>
                   <a className="footer-navigation__item-link">Механизмы</a>
                 </li>
               </ul>
             </div>
 
-            <div className="page-footer__navigation footer-navigation">
-              <h3 className="footer-navigation__title">Услуги</h3>
+            <div className={styles.footerListContainer}>
+              <h3 className={styles.footerListTitle}>Услуги</h3>
 
-              <ul className="footer-navigation__list">
-                <li className="footer-navigation__item">
-                  <a className="footer-navigation__item-link">Услуги по радио-навигационному оборудованию</a>
+              <ul className={styles.footerList}>
+                <li className={styles.footerListItem}>
+                  <a className="footer-navigation__item-link">По радио-навигационному оборудованию</a>
                 </li>
-                <li className="footer-navigation__item">
-                  <a className="footer-navigation__item-link">Услуги по электрическому оборудованию</a>
+                <li className={styles.footerListItem}>
+                  <a className="footer-navigation__item-link">По электрическому оборудованию</a>
                 </li>
-                <li className="footer-navigation__item">
-                  <a className="footer-navigation__item-link">Услуги по корпусным работам</a>
+                <li className={styles.footerListItem}>
+                  <a className="footer-navigation__item-link">По корпусным работам</a>
                 </li>
               </ul>
             </div>
 
-            <div className="page-footer__navigation footer-navigation">
-              <h3 className="footer-navigation__title">О компании</h3>
+            <div className={styles.footerListContainer}>
+              <h3 className={styles.footerListTitle}>О компании</h3>
 
-              <ul className="footer-navigation__list">
-                <li className="footer-navigation__item">
+              <ul className={styles.footerList}>
+                <li className={styles.footerListItem}>
                   <a className="footer-navigation__item-link">О нас</a>
                 </li>
-                <li className="footer-navigation__item">
+                <li className={styles.footerListItem}>
                   <a className="footer-navigation__item-link">Сертификаты и лицензии</a>
                 </li>
-                <li className="footer-navigation__item">
+                <li className={styles.footerListItem}>
                   <a className="footer-navigation__item-link">Наши работы</a>
                 </li>
-                <li className="footer-navigation__item">
+                <li className={styles.footerListItem}>
                   <a className="footer-navigation__item-link">Новости</a>
                 </li>
-                <li className="footer-navigation__item">
+                <li className={styles.footerListItem}>
                   <a className="footer-navigation__item-link">Контакты</a>
                 </li>
               </ul>
