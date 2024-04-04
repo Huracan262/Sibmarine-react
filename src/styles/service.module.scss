@@ -1,5 +1,6 @@
 @import "variables";
 @import "wrapper";
+@import "mixins";
 
 .service {
   position: relative;
@@ -8,136 +9,110 @@
   .wrapper {
   }
 
-  &::before {
-    content: "";
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    bottom: -500px;
-    right: -100px;
-
-    z-index: -1;
-
-    background-color: $color-main;
-    background-image: url("../img/service/drop.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    opacity: 0.2;
-    animation: blink 5s infinite alternate;
-  }
-}
-
-.serviceWrapper {
-  display: flex;
-  gap: 100px
-}
-
-.description {
-  margin-bottom: 50px;
-}
-
-.img {
-  width: 400px;
-  height: auto;
-
-  border-radius: 5px;
-  box-shadow: 0 0 10px fade-out(black, 0.8);
-  filter: saturate(0.3) brightness(1.2);
-
-  opacity: 0.8;
+  // todo Фоновая картинка локатора
+  //&::before {
+  //  content: "";
+  //  width: 1000px;
+  //  height: 1000px;
+  //  position: absolute;
+  //  bottom: -500px;
+  //  right: -100px;
+  //
+  //  z-index: -1;
+  //
+  //  background-color: $color-main;
+  //  background-image: url("../img/service/drop.jpg");
+  //  background-repeat: no-repeat;
+  //  background-size: contain;
+  //
+  //  opacity: 0.2;
+  //  animation: blink 5s infinite alternate;
+  //}
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 40px;
-
-  padding-top: 30px;
-  padding-right: 100px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
 }
 
 .item {
-  border-bottom: 1px solid fade-out(white, 0.9);
-  padding-left: 100px;
+  height: 75px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  transition: border-color 200ms ease;
+  text-transform: uppercase;
+  color: $color-b-two;
+
+  background-color: $color-main-two;
+  border-bottom: 1px solid $color-main-two;
+
+  cursor: pointer; // Временно!
+
+  transition: border-color 200ms ease-out;
+
+  &:hover {
+    border-color: $color-b-three;
+    box-shadow: 0 0 10px fade-out($color-b-three, 0.9);
+  }
+
+  &.current {
+    border-bottom: 1px solid $color-b-three;
+    box-shadow: 0 0 10px fade-out($color-b-three, 0.9);
+  }
 }
 
-.button {
+.itemTitle {
+  font-size: inherit;
+  font-weight: 200;
+}
+
+.itemLogo {
   font-size: 30px;
-  color: white;
-
-  border: none;
-  background-color: transparent;
-  transition: transform 200ms ease-out;
-
-  cursor: pointer;
+  //background-color: tomato;
 }
 
-.item:hover {
-  border-color: fade-out($color-accent, 0.1);
+.descriptionList {
+  min-height: 0;
+  max-height: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
 
-  &.button {
-    transform: translateX(-50px);
-    //color: $color-accent-two;
-  }
-}
+  border: 1px solid fade-out($color-c-five, 0.5);
 
-.current .button {
-  color: $color-accent-two;
-  transform: translateX(-50px);
-}
+  list-style: disc;
+  overflow: hidden;
+  opacity: 0;
 
-@keyframes blink {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 0.1;
-    filter: hue-rotate(-10deg);
+  transition: max-height 200ms ease-out, padding 100ms ease-in, opacity 200ms ease-out;
+
+  &.listOn {
+    padding: 20px 0;
+    max-height: 176px;
+    opacity: 1;
   }
 }
 
-@media (max-width: $width-desktop + 100px) {
-  .list {
-    padding: 0;
-  }
-
-  .item {
-    border-bottom: 1px solid fade-out(white, 0.9);
-    padding-left: 0;
-
-    transition: border-color 200ms ease;
-  }
-
-  .button {
-    font-size: 22px;
-  }
-
-  .current .button {
-    transform: none;
-  }
+.descriptionItem {
+  width: calc(100% - 25px);
+  padding-right: 20px;
+  position: relative;
+  left: 25px;
 }
 
-@media (max-width: 1150px) {
-  .serviceWrapper {
-    gap: 50px;
+.descriptionLink {
+  cursor: pointer; // временно!
+
+  &:hover {
+    color: $color-b-three;
   }
 
-  .list {
-    gap: 50px;
-  }
+  &:active {
 
-  .button {
-    font-style: normal;
-    text-align: left;
-  }
-}
-
-@media (max-width: $width-tablet + 100px) {
-  .img {
-    display: none;
   }
 }

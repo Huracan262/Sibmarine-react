@@ -7,7 +7,7 @@ function Catalog() {
   return (
     <section className={styles.catalog}>
       <div className={styles.wrapper}>
-        <TitleSection className="main-catalog__title">Каталог</TitleSection>
+        <TitleSection>Каталог</TitleSection>
 
         <ul className={styles.list}>
           {CATALOG_LIST.map(item => (

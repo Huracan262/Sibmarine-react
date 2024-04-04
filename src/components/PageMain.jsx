@@ -13,8 +13,8 @@ function PageMain() {
   return (
     <main className="PageMain">
       <Banner />
-      <Catalog />
       <Service />
+      <Catalog />
       <Advantages />
       <Partners />
       <Geography />

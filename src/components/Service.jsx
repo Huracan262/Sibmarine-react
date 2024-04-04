@@ -4,31 +4,38 @@ import TitleSection from '../UI/Title'
 import styles from '../styles/service.module.scss'
 
 function Service() {
-  const [toggleCurrent, setToggleCurrent] = useState(SERVICE_LIST[0])
+  const [current, setCurrent] = useState(SERVICE_LIST[0])
+  const [toggleList, setToggleList] = useState(false)
 
-  const handlerCurrentItem = item => {
-    setToggleCurrent(item)
+  const handlerToggleCurrent = item => {
+    item === current
+      ? setToggleList(!toggleList)
+      : !toggleList && setToggleList(!toggleList)
+    setCurrent(item)
   }
 
   return (
     <section className={styles.service}>
       <div className={styles.wrapper} >
-        <TitleSection className="main-service__title">Услуги</TitleSection>
+        <TitleSection>Предоставляемые услуги</TitleSection>
 
-        <p className={styles.description}>Мы специализируемся на предоставлении высококачественных услуг в следующих направлениях:</p>
+        <ul className={styles.list}>
+          {SERVICE_LIST.map(item => (
+            <li className={`${styles.item} ${current === item && toggleList === true && styles.current}`} onClick={() => handlerToggleCurrent(item)} key={item.id}>
+              <h3 className={styles.itemTitle}>{item.title}</h3>
+              <p className={styles.itemLogo}>{item.logo}</p>
+            </li>
+          ))}
+        </ul>
 
-        <div className={styles.serviceWrapper}>
-          <img className={styles.img} src={require(`../${toggleCurrent.src}`)} alt={toggleCurrent.title} />
 
-
-          <ul className={styles.list}>
-            {SERVICE_LIST.map(item => (
-              <li className={`${styles.item} ${toggleCurrent.id === item.id && styles.current}`} key={item.id}>
-                <button className={styles.button} onClick={() => handlerCurrentItem(item)}>{item.title}</button>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className={`${styles.descriptionList} ${toggleList && styles.listOn}`}>
+          {current.submenu.map(item => (
+            <li className={styles.descriptionItem}>
+              <a className={styles.descriptionLink}>{item.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )

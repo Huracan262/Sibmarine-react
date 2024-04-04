@@ -4,10 +4,9 @@
 .advantages {
   position: relative;
 
-  font-size: 14px;
   color: $color-main;
 
-  background-color: white;
+  background-color: $color-white;
 
   overflow: hidden;
 
@@ -48,6 +47,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+
+  font-size: 14px;
 }
 
 .item {
@@ -58,8 +59,10 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+
   border-radius: 10px;
   box-shadow: 0 0 5px fade-out(black, 0.8);
+
   transition: transform 20ms ease;
   overflow: hidden;
 }
@@ -96,9 +99,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   text-align: center;
   font-weight: 400;
   color: $color-main;
+
   z-index: 1;
   background-color: fade-out(white, 0.5);
 }
