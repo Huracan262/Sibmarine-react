@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Sibmarine-react/static/css/main.adad8a6a.css",
-    "main.js": "/Sibmarine-react/static/js/main.b91e334e.js",
+    "main.css": "/Sibmarine-react/static/css/main.70f8c809.css",
+    "main.js": "/Sibmarine-react/static/js/main.ee56a20e.js",
     "static/media/background.mp4": "/Sibmarine-react/static/media/background.3f9ccebd5023276d9fed.mp4",
     "static/media/background (online-video-cutter.com).mp4": "/Sibmarine-react/static/media/background (online-video-cutter.com).68c795e59e1e92a41eb8.mp4",
     "static/media/background-element.png": "/Sibmarine-react/static/media/background-element.708a492de7545ce7eae9.png",
@@ -29,11 +29,11 @@
     "static/media/logo.svg": "/Sibmarine-react/static/media/logo.b2f9412eafb5be92947e20e56f47dcde.svg",
     "static/media/README.md": "/Sibmarine-react/static/media/README.c50abc091eb7a5639250.md",
     "index.html": "/Sibmarine-react/index.html",
-    "main.adad8a6a.css.map": "/Sibmarine-react/static/css/main.adad8a6a.css.map",
-    "main.b91e334e.js.map": "/Sibmarine-react/static/js/main.b91e334e.js.map"
+    "main.70f8c809.css.map": "/Sibmarine-react/static/css/main.70f8c809.css.map",
+    "main.ee56a20e.js.map": "/Sibmarine-react/static/js/main.ee56a20e.js.map"
   },
   "entrypoints": [
-    "static/css/main.adad8a6a.css",
-    "static/js/main.b91e334e.js"
+    "static/css/main.70f8c809.css",
+    "static/js/main.ee56a20e.js"
   ]
 }

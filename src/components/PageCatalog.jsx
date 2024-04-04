@@ -1,6 +1,10 @@
+import styles from '../styles/pageCatalog.module.scss'
+
 function PageCatalog() {
   return (
-    <h2>Test Aloe</h2>
+    <main className={styles.pageCatalog}>
+      Test Aloe
+    </main>
   )
 }
 

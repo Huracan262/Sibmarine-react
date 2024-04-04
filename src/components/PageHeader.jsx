@@ -17,6 +17,7 @@ function PageHeader() {
   return (
     <header className={`white-block ${styles.pageHeader}`}>
       <div className={`wrapper ${styles.wrapper}`}>
+        {/*// todo Временно удалил! */}
         <video className={styles.background} src={videoBackground} loop autoPlay muted />
         <div className={styles.logo}>
           <Logo size={150} description={true}/>

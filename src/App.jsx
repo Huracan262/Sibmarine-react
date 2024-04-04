@@ -8,7 +8,7 @@ import MapContext from './contexts/MapContext'
 import {useState} from 'react'
 
 function App() {
-  const [toggleMap, setToggleMap] = useState(true)
+  const [toggleMap, setToggleMap] = useState(false)
 
   return (
     <BrowserRouter>

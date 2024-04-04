@@ -3,7 +3,7 @@
 
 .pageHeader {
     color: $color-main;
-    //background-color: fade-out(white, 0.3);
+    //background-color: white;
     //box-shadow: 0 8px 10px -12px black;
 
     .wrapper {
@@ -39,7 +39,8 @@
   filter: brightness(1.3);
 }
 
-/* Линия */
+//todo Временно удалил!!!
+///* Линия */
 .pageHeader::after {
   content: "";
   width: 100%;
