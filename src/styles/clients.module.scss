@@ -18,19 +18,21 @@
 }
 
 .list {
-  width: 700px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 20px;
+  height: 100px;
+  width: 800px;
+  //background-color: #2fb5fb;
 }
 
 .item {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
   opacity: 0.2;
   transition: opacity 1000ms ease-out;
+  //background-color: tomato;
+  &:hover {
+    opacity: 0.7;
+    transition: opacity 50ms ease-out;
+  }
 }
 
-.item:hover {
-  opacity: 0.7;
-  transition: opacity 50ms ease-out;
-}

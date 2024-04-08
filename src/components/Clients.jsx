@@ -1,12 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { EffectCoverflow, Pagination } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/effect-coverflow'
-import 'swiper/css/pagination'
+import Marquee from 'react-fast-marquee'
 import Title from '../UI/Title'
 import styles from '../styles/clients.module.scss'
 import CLIENTS_LIST from './Data/CLIENTS_LIST'
 
+
+//todo Удалить NPM пакеты switcher и material
 function Clients() {
   return (
     <section className={styles.clients}>
@@ -18,26 +16,15 @@ function Clients() {
             развиваемся и делаем нашу компанию лучше каждый день. Мы гордимся тем,
             что помогаем нашим клиентам достигать своих целей и решать различные задачи.</p>
 
-          <Swiper className={styles.list} effect={'coverflow'}
-                  grabCursor={true}
-                  centeredSlides={true}
-                  slidesPerView={5}
-                  spaceBetween={20}
-                  coverflowEffect={{
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: false,}}
-                    pagination={true}
-                    perw
-                    modules={[EffectCoverflow, Pagination]}>
-            {CLIENTS_LIST.map(item => {
-              return <SwiperSlide className={styles.item} key={item.title}>
-                <img src={require(`../${item.src}`)} alt={item.title} />
-              </SwiperSlide>
-            })}
-          </Swiper>
+          <ul className={styles.list}>
+            <Marquee direction="right" speed="30" gradient="gradient" gradientColor="#162639" style={{overflow: 'clip'}}>
+              {CLIENTS_LIST.map(item => (
+                <li className={styles.item} key={item.title}>
+                  <img src={require(`../${item.src}`)} alt={item.title} />
+                </li>
+              ))}
+            </Marquee>
+          </ul>
         </div>
       </div>
     </section>
