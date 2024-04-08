@@ -1,4 +1,4 @@
-import {NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import CATALOG_LIST from './Data/CATALOG_LIST'
 import TitleSection from '../UI/Title'
 import styles from '../styles/catalog.module.scss'
@@ -12,19 +12,18 @@ function Catalog() {
         <ul className={styles.list}>
           {CATALOG_LIST.map(item => (
             <li className={styles.item} key={item.title}>
-              <figure className={styles.figure}>
-                <figcaption className={styles.figureDescription}>
-                  <NavLink className={styles.cardName}><h3>{item.title}</h3></NavLink>
-                  <NavLink className={styles.link}>Подробнее</NavLink>
-                </figcaption>
+              <Link className={styles.link} to={''}>
+                <figure className={styles.figure}>
+                  <figcaption className={styles.figureDescription}>
+                    <h3 className={styles.cardName}>{item.title}</h3>
+                  </figcaption>
 
-                <img className={styles.img} src={require(`../${item.src}`)} width="440" height="400" alt={item.title} />
-              </figure>
+                  <img className={styles.img} src={require(`../${item.src}`)} width="440" height="400" alt={item.title} />
+                </figure>
+              </Link>
             </li>
           ))}
         </ul>
-
-        <NavLink className={styles.linkCatalog}>Все категории</NavLink>
       </div>
     </section>
   )

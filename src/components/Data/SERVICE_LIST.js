@@ -66,34 +66,24 @@ const SERVICE_LIST = [
     current: false,
     id: 5
   }, {
-    title: 'Техническое обслуживание',
+    title: 'Проектирование',
     logo: <FaWrench />,
     submenu: [
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' }
+      { title: 'РКО', link: '' },
+      { title: 'Электрическое оборудование', link: '' },
+      { title: 'Щитовое оборудование', link: '' },
+      { title: 'Механические и корпусные работы', link: '' }
     ],
     current: false,
     id: 6
   }, {
-    title: 'Ежегодные проверки',
+    title: 'Проектирование',
     logo: <FaClipboardCheck />,
     submenu: [
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' },
-      { title: 'тест', link: '' }
+      { title: 'РКО', link: '' },
+      { title: 'Электрическое оборудование', link: '' },
+      { title: 'Щитовое оборудование', link: '' },
+      { title: 'Механические и корпусные работы', link: '' }
     ],
     current: false,
     id: 7

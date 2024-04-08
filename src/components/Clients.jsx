@@ -1,3 +1,7 @@
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 import Title from '../UI/Title'
 import styles from '../styles/clients.module.scss'
 import CLIENTS_LIST from './Data/CLIENTS_LIST'
@@ -13,13 +17,13 @@ function Clients() {
             развиваемся и делаем нашу компанию лучше каждый день. Мы гордимся тем,
             что помогаем нашим клиентам достигать своих целей и решать различные задачи.</p>
 
-          <ul className={styles.list}>
+          <Swiper className={styles.list} navigation={true} slidesPerView={5} modules={[Navigation]}>
             {CLIENTS_LIST.map(item => {
-              return <li className={styles.item} key={item.title}>
+              return <SwiperSlide className={styles.item} key={item.title}>
                 <img src={require(`../${item.src}`)} alt={item.title} />
-              </li>
+              </SwiperSlide>
             })}
-          </ul>
+          </Swiper>
         </div>
       </div>
     </section>

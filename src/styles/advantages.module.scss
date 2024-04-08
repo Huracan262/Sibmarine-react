@@ -17,34 +17,6 @@
   }
 }
 
-// todo Кораблик
-//.advantages::before {
-//  content: "";
-//  width: 170px;
-//  height: 170px;
-//  position: absolute;
-//  top: -22px;
-//  right: 300px;
-//
-//  z-index: 0;
-//
-//  background-image: url("../img/advantages/drop.png");
-//  background-repeat: no-repeat;
-//  background-size: contain;
-//  opacity: 0.2;
-//
-//  transform: scaleX(-1);
-//  animation: ship 40s linear infinite;
-//}
-//
-//@keyframes ship {
-//  from {
-//    transform: translateX(0);
-//  } to {
-//        transform: translateX(-800px);
-//  }
-//}
-
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -62,36 +34,42 @@
   justify-content: space-between;
   position: relative;
 
-  border-radius: 10px;
-  box-shadow: 0 0 5px fade-out(black, 0.8);
+  background-color: $color-c-five;
+  //box-shadow: 0 0 5px fade-out(black, 0.8);
 
-  transition: transform 20ms ease;
+  transition: opacity 200ms ease-out;
   overflow: hidden;
-}
+  opacity: 0.9;
 
-.item:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 5px fade-out(black, 0.5);
-}
+  &:hover {
+    opacity: 1;
+  }
 
-.item::before {
-  content: "SIBMARINE";
-  width: max-content;
-  padding: 5px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-left: 75px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  font-family: "Roboto", sans-serif;
+    border: 20px solid $color-white;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
 
-  opacity: 0.2;
-  z-index: 2;
-}
+    z-index: 1;
+  }
 
-.item:hover::before {
-  color: $color-accent;
-  opacity: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    border: 20px solid $color-white;
+    border-left-color: transparent;
+    border-top-color: transparent;
+
+    z-index: 1;
+  }
 }
 
 .title {
@@ -104,17 +82,14 @@
 
   text-align: center;
   font-weight: 400;
-  color: $color-main;
+  color: $color-white;
 
   z-index: 1;
-  background-color: fade-out(white, 0.5);
+  background-color: fade-out($color-d-one, 0.8);
+  //filter: blur(1px);
 }
 
-.item:hover .title {
-  color: white;
-  background-image: linear-gradient(to right, fade-out($color-accent, 0.5), fade-out($color-accent-two, 0.5));
-}
-
+// Линия между блоками
 .title::before {
   content: "";
   width: 150px;
@@ -123,8 +98,9 @@
   top: 0;
   left: 0;
   margin-left: 75px;
-  background-color: $color-accent;
+  background-color: $color-b-three;
   z-index: 2;
+  opacity: 0.5;
 }
 
 .iconBlock {
@@ -138,12 +114,15 @@
   left: 40px;
 
   font-size: 30px;
-  color: $color-accent;
+  color: black;
 
   border-radius: 50%;
-  box-shadow: 0 0 5px fade-out(black, 0.8);
-  background-color: white;
+  //box-shadow: 0 0 5px fade-out(black, 0.8);
+  background-color: $color-white;
   z-index: 1;
+
+  opacity: 0;
+  transition: opacity 100ms ease-in;
 }
 
 .item:hover .iconBlock {
@@ -158,16 +137,24 @@
 
   //z-index: -1;
 
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  filter: grayscale(100%);
-  opacity: 0.1;
-  background-color: #6c81a0;
+  filter: blur(1px) grayscale(100%);
+  opacity: 0.3;
+  transition: filter 200ms ease-out;
 }
 
 .item:hover .img {
-  opacity: 0.5;
+  filter: blur(0) grayscale(50%);
 }
+
+.item:hover .title {
+  //color: $color-b-three;
+}
+
+.item:hover .title::before {
+  //opacity: 1;
+}
+
+
 
 @media (max-width: $width-desktop + 100px) {
   .list {

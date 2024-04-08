@@ -1,5 +1,6 @@
 @import "variables";
 @import "wrapper";
+@import "mixins";
 
 .catalog {
 
@@ -11,176 +12,65 @@
 
 .list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
 }
 
 .item {
-  height: 370px;
-
-  box-shadow: 0 0 10px fade-out(black, 0.7);
-  filter: brightness(0.9);
-
-  transition: transform 50ms ease;
+  height: 300px;
 }
 
-.item:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 15px fade-out(black, 0.7);
-  filter: brightness(1);
+.link {
+  text-decoration: none;
 }
 
 .figure{
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .figureDescription {
-  padding: 10px 20px;
+  padding: 20px;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
-
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background: $color-main;
-  transition: background 2s ease;
-}
-
-.item:hover .figureDescription {
-  background-image: linear-gradient(to right, $color-accent, $color-accent-two);
+  justify-content: center;
 }
 
 .cardName {
-  max-width: 70%;
-
-  font-size: 20px;
-  line-height: 24px;
+  width: 100%;
+  height: 100%;
+  display: inline;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-
-  h3 {
-    display: inline;
-    font-size: inherit;
-    line-height: inherit;
-    font-weight: 400;
-  }
-}
-
-.link {
-  margin-left: auto;
-  align-self: flex-end;
-
-  font-size: 16px;
-  line-height: 15px;
-  font-weight: 700;
-  text-decoration: none;
-  color: white;
-
-  opacity: 0.5;
-}
-
-.link:hover {
-  opacity: 1;
-}
-
-.link:active {
-  transform: scale(0.98);
-  opacity: 0.8;
-}
-
-.linkCatalog {
-  margin-top: 20px;
-  align-self: flex-end;
-
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-
-  opacity: 0.4;
-  transition: transform 50ms ease;
-}
-
-.linkCatalog:hover {
-  opacity: 0.7;
-  text-decoration: underline;
-}
-
-.linkCatalog:active {
-  opacity: 0.5;
-  text-decoration: underline;
-  transform: scale(0.99);
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 200;
 }
 
 .img {
-  height: 300px;
+  width: 200px;
+  height: 200px;
+  align-self: center;
+
   order: -1;
   overflow: clip;
-  background-color: $color-accent-two;
+  opacity: 0.8;
+
+  border-bottom: 1px solid fade-out($color-white, 0.5);
+
+  transition: border-color 200ms ease-out, opacity 200ms ease-out;
 }
 
-
-@media (max-width: $width-desktop + 100px) {
-  .list {
-    display: flex;
-    justify-content: space-around;
-    gap: 0;
-  }
-
-  .item {
-    width: 440px;
-  }
-
-  .item:last-child {
-    display: none;
-  }
+.link:hover .img {
+  border-color: $color-b-three;
+  opacity: 1;
 }
 
-@media (max-width: 1000px) {
-  .list {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .item {
-    width: 100%;
-    height: 70px;
-  }
-
-  .item:last-child {
-    display: block;
-  }
-
-  .img {
-    display: none;
-  }
-
-  .figureDescription {
-    border-radius: 5px;
-    display: block;
-    padding: 0;
-    width: 100%;
-  }
-
-  .cardName {
-    max-width: 100%;
-    height: 100%;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-  }
-
-  .linkCatalog {
-    margin-top: 30px;
-    align-self: center;
-  }
-
-  .link {
-    display: none;
-  }
+.link:active .img {
+  border-color: $color-b-three;
+  opacity: 0.5;
 }

@@ -1,13 +1,13 @@
 const CATALOG_LIST = [
   {
     title: 'Радио навигационное оборудование',
-    src: 'img/catalog/radio.jpg'
+    src: 'img/catalog/catalog-3.png'
   }, {
     title: 'Электрическое оборудование',
-    src: 'img/catalog/elektro.jpg'
+    src: 'img/catalog/catalog-1.png'
   }, {
     title: 'Механизмы',
-    src: 'img/catalog/mechanic.jpg'
+    src: 'img/catalog/catalog-2.png'
   },
 ]
 

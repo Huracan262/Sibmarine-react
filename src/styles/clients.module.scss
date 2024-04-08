@@ -15,12 +15,10 @@
 
 .description {
   width: 600px;
-  font-size: 18px;
-  font-weight: 300;
 }
 
 .list {
-  width: 700px;
+  width: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -28,8 +26,8 @@
 }
 
 .item {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
 
   opacity: 0.2;
   transition: opacity 1000ms ease-out;

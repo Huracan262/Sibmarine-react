@@ -80,28 +80,27 @@
 }
 
 .point {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   position: relative;
 
   border-radius: 50%;
-  background-image: linear-gradient(to right, $color-accent, $color-accent-two);
+  background-image: linear-gradient(to right, $color-b-three 90%, $color-white);
   box-shadow: 0 0 10px fade-out(black, 0.2);
 
-
-
+  transition: opacity 200ms ease-out;
   opacity: 0.6;
 }
 
 .point::before {
   content: "";
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 50%;
-  margin-top: -25px;
+  margin-top: -15px;
   left: 50%;
-  margin-left: -25px;
+  margin-left: -15px;
 
   border-radius: 50%;
   border-top: 1px solid $color-accent;
@@ -141,9 +140,8 @@
   left: 0;
 
   font-family: "Roboto", sans-serif;
-  color: lightgray;
+  color: $color-white;
 
-  border-radius: 5px;
   background-color: fade-out(black, 0.6);
 
   opacity: 0;
