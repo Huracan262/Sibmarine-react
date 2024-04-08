@@ -1,4 +1,4 @@
-import {NavLink} from 'react-router-dom'
+import { GiAnchor } from "react-icons/gi";
 import styles from '../styles/warranty.module.scss'
 import Title from '../UI/Title'
 import WARRANTY_LIST from './Data/WARRANTY_LIST'
@@ -12,14 +12,9 @@ function Warranty() {
         <ul className={styles.list}>
           {WARRANTY_LIST.map(item => (
             <li className={styles.item} key={item.title}>
-              <figure className={styles.figure}>
-                <figcaption className={styles.figureDescription}>
-                  <NavLink className={styles.cardName}><h3>{item.title}</h3></NavLink>
-                  <NavLink className={styles.link}>Подробнее</NavLink>
-                </figcaption>
-
-                <img className={styles.img} src={require(`../${item.src}`)} width="440" height="400" alt={item.title}/>
-              </figure>
+              <div className={styles.iconContainer}><GiAnchor className={styles.icon} /></div>
+              <h3 className={styles.title}>{item.title}</h3>
+              <p className={styles.description}>{item.description}</p>
             </li>
           ))}
         </ul>

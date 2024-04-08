@@ -2,13 +2,13 @@
 @import "wrapper";
 
 .footer {
-  color: white;
+  color: $color-white;
   background-color: $color-main;
 
   .wrapper {
-    border-top: 5px solid $color-accent;
+    border-top: 5px solid $color-b-three;
     padding: 50px 20px 0;
-    transform: translateY(-5px);
+    //transform: translateY(-5px);
   }
 }
 
@@ -44,7 +44,7 @@
   justify-content: center;
   align-items: center;
 
-  color: white;
+  color: $color-white;
   font-size: 30px;
 
   border-radius: 50%;
@@ -57,7 +57,7 @@
 
     border-radius: 50%;
     //background-color: $color-accent;
-    box-shadow: 0 0 10px fade-out(white, 0.8);
+    box-shadow: 0 0 10px fade-out($color-white, 0.8);
     opacity: 1;
   }
 }
@@ -76,10 +76,11 @@
 .footerListTitle {
   padding-bottom: 5px;
   margin-bottom: 10px;
+  font-weight: inherit;
 
   text-transform: uppercase;
 
-  border-bottom: 1px solid $color-accent;
+  border-bottom: 1px solid $color-b-three;
 }
 
 .footerList {
@@ -88,7 +89,7 @@
 
 .footerListItem {
   margin-bottom: 10px;
-  opacity: 0.5;
+  opacity: 0.7;
 
   &:hover {
     opacity: 1;
