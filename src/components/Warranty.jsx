@@ -1,7 +1,7 @@
+import {NavLink} from 'react-router-dom'
 import styles from '../styles/warranty.module.scss'
 import Title from '../UI/Title'
 import WARRANTY_LIST from './Data/WARRANTY_LIST'
-import {NavLink} from 'react-router-dom'
 
 function Warranty() {
   return (
