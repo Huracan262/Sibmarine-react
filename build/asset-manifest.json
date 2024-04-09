@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/Sibmarine-react/static/css/main.70f8c809.css",
-    "main.js": "/Sibmarine-react/static/js/main.ee56a20e.js",
+    "main.css": "/Sibmarine-react/static/css/main.cbd5a1fd.css",
+    "main.js": "/Sibmarine-react/static/js/main.d561d15f.js",
     "static/media/background.mp4": "/Sibmarine-react/static/media/background.3f9ccebd5023276d9fed.mp4",
     "static/media/background (online-video-cutter.com).mp4": "/Sibmarine-react/static/media/background (online-video-cutter.com).68c795e59e1e92a41eb8.mp4",
+    "static/media/sand_texture.jpg": "/Sibmarine-react/static/media/sand_texture.0fcfeda090f23a782ad6.jpg",
     "static/media/background-element.png": "/Sibmarine-react/static/media/background-element.708a492de7545ce7eae9.png",
     "static/media/line.png": "/Sibmarine-react/static/media/line.38d4e50a3ef890473105.png",
     "static/media/drop.jpg": "/Sibmarine-react/static/media/drop.bea29693e6b405374116.jpg",
@@ -27,13 +28,16 @@
     "static/media/mechanic.jpg": "/Sibmarine-react/static/media/mechanic.af81ef62c149fefb99e5.jpg",
     "static/media/logo-footer.svg": "/Sibmarine-react/static/media/logo-footer.bde06b001a667b5b8b21aed906b2b40b.svg",
     "static/media/logo.svg": "/Sibmarine-react/static/media/logo.b2f9412eafb5be92947e20e56f47dcde.svg",
+    "static/media/catalog-1.png": "/Sibmarine-react/static/media/catalog-1.553277f9cf74994b1faf.png",
+    "static/media/catalog-2.png": "/Sibmarine-react/static/media/catalog-2.fd80fddb9ef5cc98758a.png",
+    "static/media/catalog-3.png": "/Sibmarine-react/static/media/catalog-3.69bf12d3b76eb61e9dce.png",
     "static/media/README.md": "/Sibmarine-react/static/media/README.c50abc091eb7a5639250.md",
     "index.html": "/Sibmarine-react/index.html",
-    "main.70f8c809.css.map": "/Sibmarine-react/static/css/main.70f8c809.css.map",
-    "main.ee56a20e.js.map": "/Sibmarine-react/static/js/main.ee56a20e.js.map"
+    "main.cbd5a1fd.css.map": "/Sibmarine-react/static/css/main.cbd5a1fd.css.map",
+    "main.d561d15f.js.map": "/Sibmarine-react/static/js/main.d561d15f.js.map"
   },
   "entrypoints": [
-    "static/css/main.70f8c809.css",
-    "static/js/main.ee56a20e.js"
+    "static/css/main.cbd5a1fd.css",
+    "static/js/main.d561d15f.js"
   ]
 }

@@ -1,11 +1,13 @@
 @import "variables";
 @import "wrapper";
+@import "mixins";
 
 .warranty {
   position: relative;
   color: $color-main;
   overflow: hidden;
 
+  @include blockShadows();
   background-color: $color-white;
 
   .wrapper{

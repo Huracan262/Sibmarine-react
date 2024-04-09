@@ -1,6 +1,7 @@
 import {useState} from 'react'
-import {Button} from '@mui/material'
+// todo Изменить иконки на React-Icons
 import {Menu, MenuOpen} from  '@mui/icons-material'
+import Button from '../UI/Button'
 import Contacts from './Contacts'
 import Logo from '../UI/Logo'
 import MainNavigation from './MainNavigation'
@@ -31,7 +32,7 @@ function PageHeader() {
         <div className={styles.rows}>
           <div className={styles.container}>
             <Contacts/>
-            <Button variant="outlined">Оставить заявку</Button>
+            <Button>Оставить заявку</Button>
           </div>
 
           <MainNavigation className={`${styles.navigation} ${mobileMenu && styles.mobileMenuClose}`}/>

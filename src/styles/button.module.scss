@@ -1,0 +1,25 @@
+@import "mixins";
+@import "wrapper";
+@import "variables";
+
+.button {
+  padding: 5px 15px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: $color-white;
+
+  border: none;
+  background-color: $color-b-one;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &:active {
+    transform: scale(0.97);
+    filter: brightness(0.8);
+  }
+}
