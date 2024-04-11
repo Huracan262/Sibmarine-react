@@ -1,14 +1,16 @@
-import {useState} from 'react'
+import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 // todo Изменить иконки на React-Icons
-import {Menu, MenuOpen} from  '@mui/icons-material'
+import { Menu, MenuOpen } from  '@mui/icons-material'
 import Button from '../UI/Button'
 import Contacts from './Contacts'
 import Logo from '../UI/Logo'
 import MainNavigation from './MainNavigation'
 import styles from '../styles/pageHeader.module.scss'
-import videoBackground from '../video/background (online-video-cutter.com).mp4'
 
 function PageHeader() {
+  const location = useLocation()
+
   const [mobileMenu, setMobileMenu] = useState(true)
 
   function toggleMobileMenu() {
@@ -16,10 +18,8 @@ function PageHeader() {
   }
 
   return (
-    <header className={`white-block ${styles.pageHeader}`}>
+    <header className={`${styles.pageHeader} ${location.pathname === '/' ? '' : styles.otherPageHeader}`}>
       <div className={`wrapper ${styles.wrapper}`}>
-        {/*// todo Временно удалил! */}
-        <video className={styles.background} src={videoBackground} loop autoPlay muted />
         <div className={styles.logo}>
           <Logo size={150} description={true}/>
         </div>
