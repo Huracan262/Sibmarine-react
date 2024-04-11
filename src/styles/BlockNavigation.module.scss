@@ -1,0 +1,20 @@
+@import "variables";
+@import "wrapper";
+@import "mixins";
+
+.list {
+  width: 300px;
+  font-weight: 400;
+}
+
+.item {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-bottom: 1px solid $color-b-one;
+
+  transition: border-color 200ms ease-out;
+
+  &:hover {
+    border-color: $color-b-four;
+  }
+}
