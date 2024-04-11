@@ -7,7 +7,6 @@ import Geography from './Geography'
 import Clients from './Clients'
 import Warranty from './Warranty'
 import Approval from './Approval'
-import Map from './Map'
 
 function PageMain() {
   return (
@@ -21,7 +20,6 @@ function PageMain() {
       <Clients />
       <Warranty />
       {/*<Approval />*/}
-      <Map />
     </main>
   )
 }

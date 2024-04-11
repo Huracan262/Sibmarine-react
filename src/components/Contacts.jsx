@@ -1,6 +1,6 @@
+import { useContext } from 'react'
 import styles from '../styles/contacts.module.scss'
 import MapContext from '../contexts/MapContext'
-import {useContext} from 'react'
 
 function Contacts() {
   const {toggleMap, setToggleMap} = useContext(MapContext)

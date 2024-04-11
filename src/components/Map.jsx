@@ -1,7 +1,7 @@
-import {useContext, useEffect} from 'react'
-import {BsX} from "react-icons/bs"
-import styles from '../styles/map.module.scss'
+import { useContext, useEffect } from 'react'
 import MapContext from '../contexts/MapContext'
+import { BsX } from "react-icons/bs"
+import styles from '../styles/map.module.scss'
 
 function Map() {
   const {toggleMap, setToggleMap} = useContext(MapContext)

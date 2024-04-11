@@ -10,7 +10,7 @@ function PageFooter() {
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles.contacts}>
-            <LogoFooter size="170" />
+            <LogoFooter size="150" />
 
             <ContactsFooter />
 

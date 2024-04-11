@@ -3,7 +3,9 @@ import styles from '../styles/pageCatalog.module.scss'
 function PageCatalog() {
   return (
     <main className={styles.pageCatalog}>
-      Test Aloe
+      <div className={styles.wrapper}>
+        Здесь типо каталог
+      </div>
     </main>
   )
 }
