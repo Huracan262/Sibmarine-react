@@ -11,7 +11,7 @@
   margin-right: 30px;
 
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   text-transform: none;
   text-decoration: none;
@@ -23,25 +23,27 @@
   background-color: transparent;
 
   opacity: 50%;
+  transition: opacity 200ms ease-out;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+
+    cursor: pointer;
+  }
+
+  &:active {
+    text-decoration: underline;
+    opacity: 1;
+    color: $color-b-one;
+    transition: opacity 200ms ease-out, color 50ms ease-out;
+    
+    cursor: pointer;
+  }
 }
 
 .item:last-child {
   margin-right: 30px;
-}
-
-.item:hover {
-  text-decoration: underline;
-  opacity: 1;
-
-  cursor: pointer;
-}
-
-.item:active {
-  text-decoration: underline;
-  opacity: 1;
-  color: $color-accent;
-
-  cursor: pointer;
 }
 
 @media (max-width: $width-desktop + 100px) {

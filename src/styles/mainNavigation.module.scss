@@ -11,18 +11,15 @@
 }
 
 .item {
+  transition: color 200ms ease-out;
+
+  &:hover {
+    color: $color-b-one;
+  }
 }
 
 .icon {
   margin-right: 5px;
-
-  font-size: 18px;
-}
-
-.item:hover {
-  color: $color-accent;
-
-  cursor: pointer;
 }
 
 .link {
