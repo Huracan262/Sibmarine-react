@@ -8,7 +8,7 @@
   color: $color-main;
 
   background-color: $color-white;
-  @include blockShadows();
+  @include blockShadows(bot);
 
   overflow: hidden;
 

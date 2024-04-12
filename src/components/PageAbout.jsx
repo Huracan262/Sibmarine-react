@@ -1,9 +1,14 @@
+import { useEffect } from 'react'
 import Breadcrumb from '../components/Breadcrumb'
 import BlockNavigation from './BlockNavigation'
 import ABOUT_LIST from './Data/ABOUT_LIST'
 import styles from '../styles/PageAbout.module.scss'
 
 function PageAbout() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className={styles.pageAbout}>
       <div className={styles.wrapper}>

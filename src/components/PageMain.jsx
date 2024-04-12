@@ -6,6 +6,7 @@ import Partners from './Partners'
 import Geography from './Geography'
 import Clients from './Clients'
 import Warranty from './Warranty'
+import News from './News'
 import Approval from './Approval'
 
 function PageMain() {
@@ -14,6 +15,7 @@ function PageMain() {
       <Banner />
       <Service />
       <Catalog />
+      <News />
       <Advantages />
       <Partners />
       <Geography />

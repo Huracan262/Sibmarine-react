@@ -10,11 +10,11 @@
 .item {
   margin-bottom: 5px;
   padding: 5px;
-  border-bottom: 1px solid $color-b-one;
+  border-bottom: 1px solid fade-out($color-b-one, 0.8);
 
   transition: border-color 200ms ease-out;
 
   &:hover {
-    border-color: $color-b-four;
+    border-color: $color-b-one;
   }
 }
