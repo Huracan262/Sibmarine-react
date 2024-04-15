@@ -18,3 +18,12 @@
     border-color: $color-b-one;
   }
 }
+
+.link {
+  text-decoration: none;
+  color: $color-main;
+}
+
+.active {
+  color: $color-c-four;
+}

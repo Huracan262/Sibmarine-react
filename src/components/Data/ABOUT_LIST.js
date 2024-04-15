@@ -24,6 +24,11 @@ const ABOUT_LIST = {
     {
       title: 'Контакты',
       link: '/about/contacts',
+    },
+    {
+      title: 'Наша команда',
+      link: '/about/team',
+      block: <AboutLicenses />,
     }
   ]
 }

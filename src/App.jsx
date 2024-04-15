@@ -27,6 +27,7 @@ function App() {
               <Route index element={<AboutMain />} />  // Если есть AboutMain
               <Route path="news" element={<AboutNews />} />
               <Route path="projects" element={<AboutProjects />} />
+              <Route path="team" element={<aboutTeams />} />
             </Route>
             <Route path="service" element={<PageService />} />
             <Route path="*" element={<PageNotFound />} />
@@ -34,7 +35,7 @@ function App() {
         </Routes>
       </MapContext.Provider>
     </BrowserRouter>
-  );
+  )
 }
 
 export default App;

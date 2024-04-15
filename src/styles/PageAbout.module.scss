@@ -26,10 +26,12 @@
 
 .title {
   margin-bottom: 10px;
+}
 
+.link {
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   color: $color-b-one;
+  text-decoration: none;
 }
-

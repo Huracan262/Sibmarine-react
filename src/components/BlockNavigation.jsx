@@ -1,20 +1,21 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import styles from '../styles/BlockNavigation.module.scss'
 
 function BlockNavigation({ props }) {
-  console.log(props)
-  return (
-    <>
-      <ul className={styles.list}>
-        {props.subTitle.map(item => {
-          return (
-            <li className={styles.item} key={item.title}>
-              <NavLink to={item.link}>{item.title}</NavLink>
-            </li>
-          )})}
+  const location = useLocation().pathname
+  console.log(location)
 
-      </ul>
-    </>
+  return (
+    <ul className={styles.list}>
+      {props.subTitle.map(item => {
+        return (
+          <li className={styles.item} key={item.title}>
+            <NavLink className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link} to={item.link}>
+              {item.title}
+            </NavLink>
+          </li>
+        )})}
+    </ul>
   )
 }
 
