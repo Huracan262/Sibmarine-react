@@ -1,22 +1,29 @@
+import AboutNews from '../AboutNews'
+import AboutProjects from '../AboutProjects'
+import AboutLicenses from '../AboutLicenses'
+
 const ABOUT_LIST = {
   mainTitle: 'О компании',
   link: '',
   subTitle: [
     {
       title: 'Новости',
-      link: ''
+      link: '/about/news',
+      block: <AboutNews />,
     },
     {
       title: 'Наши проекты',
-      link: ''
+      link: '/about/projects',
+      block: <AboutProjects />,
     },
     {
       title: 'Сертификаты и лицензии',
-      link: ''
+      link: '/about/licenses',
+      block: <AboutLicenses />,
     },
     {
       title: 'Контакты',
-      link: ''
+      link: '/about/contacts',
     }
   ]
 }
