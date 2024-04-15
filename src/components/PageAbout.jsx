@@ -19,6 +19,7 @@ function PageAbout() {
     <main className={styles.pageAbout}>
       <div className={styles.wrapper}>
         <Breadcrumb />
+
         <h1 className={styles.title}>
           <Link className={styles.link} to={'/about'}>{ABOUT_LIST.mainTitle}</Link>
         </h1>
@@ -32,6 +33,7 @@ function PageAbout() {
               <Route path="news" element={<AboutNews />} />
               <Route path="projects" element={<AboutProjects />} />
               <Route path="team" element={<AboutTeam />} />
+              <Route path="*" element={<AboutMain />} />
             </Routes>
           </div>
         </div>

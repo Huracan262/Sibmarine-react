@@ -9,10 +9,6 @@ import PageAbout from './components/PageAbout'
 import PageService from './components/PageService'
 import './styles/app.scss'
 
-import AboutMain from './components/AboutMain'
-import AboutProjects from './components/AboutProjects'
-import AboutNews from './components/AboutNews'
-
 function App() {
   const [toggleMap, setToggleMap] = useState(false)
 
@@ -23,12 +19,7 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route index element={<PageMain />} />
             <Route path="catalog" element={<PageCatalog />} />
-            <Route path="about" element={<PageAbout />}>
-              <Route index element={<AboutMain />} />  // Если есть AboutMain
-              <Route path="news" element={<AboutNews />} />
-              <Route path="projects" element={<AboutProjects />} />
-              <Route path="team" element={<aboutTeams />} />
-            </Route>
+            <Route path="about/*" element={<PageAbout />} />
             <Route path="service" element={<PageService />} />
             <Route path="*" element={<PageNotFound />} />
           </Route>
