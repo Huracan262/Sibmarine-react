@@ -1,0 +1,8 @@
+function dateFormatting(dateString) {
+  const options = { year: 'numeric', month: 'long', day: 'numeric' }
+  const date = new Date(dateString)
+
+  return date.toLocaleDateString('ru-RU', options)
+}
+
+export default dateFormatting

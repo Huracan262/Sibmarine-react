@@ -1,0 +1,117 @@
+@import "variables";
+@import "wrapper";
+@import "mixins";
+
+.news {
+  position: relative;
+  color: $color-main;
+  background-color: $color-white;
+  overflow-y: hidden;
+
+  @include blockShadows(top);
+
+  &::before {
+    content: "";
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: -450px;
+    left: -450px;
+
+    z-index: 0;
+    background-image: url("../img/drop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transform: rotate(20deg);
+    opacity: 0.05;
+  }
+
+
+  .wrapper {
+  }
+}
+
+.new {
+  height: 250px;
+  display: flex;
+  gap: 40px;
+}
+
+.new:last-child {
+  position: relative;
+  margin-top: 40px;
+
+  &::before {
+    content: "";
+    width: 30%;
+    height: 1px;
+    position: absolute;
+    top: -20px;
+    right: 200px;
+    background-color: fade-out($color-b-three, 0.5);
+  }
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-size: 25px;
+  font-weight: 400;
+
+  color: $color-b-one;
+}
+
+.description {
+  max-height: 150px;
+
+  text-indent: 40px;
+  text-align: justify;
+  margin-bottom: 20px;
+
+  //todo Временно
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.addition {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link,
+.date {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: fade-out($color-b-one, 0.5);
+}
+
+.link:hover {
+  color: $color-b-one;
+}
+
+.date {
+  font-size: 14px;
+  color: fade-out($color-main, 0.8);
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  order: -1;
+}
+
+.picture {
+  width: inherit;
+  height: inherit;
+}
