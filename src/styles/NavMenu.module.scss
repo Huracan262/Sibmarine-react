@@ -1,0 +1,22 @@
+@import "variables";
+
+.menu {
+  display: flex;
+  width: calc($width-desktop / 2);
+  height: 240px;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+
+  background-color: $color-main;
+  border-bottom: 1px solid $color-b-three;
+  opacity: 0.3;
+}
+
+.list {
+
+}
+
+.item {
+
+}

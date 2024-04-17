@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import NAVIGATION_LIST from './Data/NAVIGATION_LIST'
 import styles from '../styles/mainNavigation.module.scss'
+import NavMenu from './NavMenu'
 
-function MainNavigation({className}) {
+function MainNavigation({ className }) {
   return (
     <nav className={className}>
       <ul className={styles.list}>
@@ -12,6 +13,8 @@ function MainNavigation({className}) {
               {item.icon}
               {item.label}
             </Link>
+
+            <NavMenu list={item} />
           </li>
         ))}
       </ul>
