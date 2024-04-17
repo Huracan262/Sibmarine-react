@@ -14,7 +14,7 @@ function MainNavigation({ className }) {
               {item.label}
             </Link>
 
-            <NavMenu list={item} />
+            {/*<NavMenu list={item} />*/}
           </li>
         ))}
       </ul>

@@ -5,7 +5,7 @@ import styles from '../styles/Breadcrumb.module.scss'
 
 function Breadcrumb() {
   const location = useLocation()
-  const pathNames = location.pathname.split('/').filter(x => x)
+  const pathNames = location.pathname.split('/').filter(x => BREADCRUMB_NAMES[x])
 
   return (
     <ol className={styles.list}>

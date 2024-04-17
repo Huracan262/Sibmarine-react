@@ -3,7 +3,6 @@ import styles from '../styles/BlockNavigation.module.scss'
 
 function BlockNavigation({ props }) {
   const location = useLocation().pathname
-  console.log(location)
 
   return (
     <ul className={styles.list}>
