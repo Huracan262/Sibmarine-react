@@ -1,8 +1,8 @@
+import { Link } from 'react-router-dom'
 import { RiShip2Fill } from 'react-icons/ri'
 import Title from '../UI/Title'
 import NEWS_LIST from './Data/NEWS_LIST'
 import styles from '../styles/News.module.scss'
-import {Link} from 'react-router-dom'
 
 function News() {
   function formatDate(dateString) {

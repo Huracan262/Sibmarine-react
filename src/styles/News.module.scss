@@ -6,6 +6,7 @@
   position: relative;
   color: $color-main;
   background-color: $color-white;
+  overflow-y: hidden;
 
   @include blockShadows(top);
 
