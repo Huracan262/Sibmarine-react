@@ -1,12 +1,12 @@
 import ADVANTAGES_LIST from './Data/ADVANTAGES_LIST'
-import TitleSection from '../UI/Title'
+import Title from '../UI/Title'
 import styles from '../styles/advantages.module.scss'
 
 function Advantages() {
   return (
     <section className={styles.advantages}>
       <div className={styles.wrapper}>
-        <TitleSection className="main-advantages__title">Преимущества</TitleSection>
+        <Title className="main-advantages__title" to="about/licenses">Преимущества</Title>
 
         <ul className={styles.list}>
           {ADVANTAGES_LIST.map(item => (

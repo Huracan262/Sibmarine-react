@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import SERVICE_LIST from './Data/SERVICE_LIST';
-import TitleSection from '../UI/Title';
+import Title from '../UI/Title';
 import styles from '../styles/service.module.scss';
 
 function Service() {
@@ -48,7 +48,7 @@ function Service() {
   return (
     <section className={styles.service}>
       <div className={styles.wrapper}>
-        <TitleSection>Предоставляемые услуги</TitleSection>
+        <Title to="service">Предоставляемые услуги</Title>
 
         <ul className={styles.list}>
           {SERVICE_LIST.map((item) => (

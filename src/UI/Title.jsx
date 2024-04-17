@@ -1,12 +1,15 @@
-import { PiArrowRightThin } from "react-icons/pi";
+import { Link } from 'react-router-dom'
+import { PiArrowRightThin } from 'react-icons/pi'
 import styles from '../styles/titleSection.module.scss'
 
-function TitleSection(props) {
+function TitleSection({ children, to }) {
   return (
-    <h2 className={styles.title}>
-      {props.children}
-      <PiArrowRightThin className={styles.arrow} />
-    </h2>
+    <Link className={styles.link} to={to}>
+      <h2 className={styles.title}>
+        {children}
+        <PiArrowRightThin className={styles.arrow} />
+      </h2>
+    </Link>
   )
 }
 

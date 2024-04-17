@@ -1,13 +1,13 @@
 import {Link, NavLink} from 'react-router-dom'
 import CATALOG_LIST from './Data/CATALOG_LIST'
-import TitleSection from '../UI/Title'
+import Title from '../UI/Title'
 import styles from '../styles/catalog.module.scss'
 
 function Catalog() {
   return (
     <section className={styles.catalog}>
       <div className={styles.wrapper}>
-        <TitleSection>Каталог</TitleSection>
+        <Title to="catalog">Каталог</Title>
 
         <ul className={styles.list}>
           {CATALOG_LIST.map(item => (

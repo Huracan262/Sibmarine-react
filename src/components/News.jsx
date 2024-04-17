@@ -14,7 +14,7 @@ function News() {
   return (
     <article className={styles.news}>
       <div className={styles.wrapper}>
-        <Title>Новости</Title>
+        <Title to="about/news">Новости</Title>
 
         <article className={styles.new}>
           <div className={styles.container}>
