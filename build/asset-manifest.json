@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Sibmarine-react/static/css/main.6e44acd2.css",
-    "main.js": "/Sibmarine-react/static/js/main.7a407b2d.js",
+    "main.css": "/Sibmarine-react/static/css/main.a68a8d30.css",
+    "main.js": "/Sibmarine-react/static/js/main.ab2f7c9e.js",
     "static/media/background.mp4": "/Sibmarine-react/static/media/background.3f9ccebd5023276d9fed.mp4",
     "static/media/backgroundыыы).mp4": "/Sibmarine-react/static/media/backgroundыыы).68c795e59e1e92a41eb8.mp4",
     "static/media/Test2.mp4": "/Sibmarine-react/static/media/Test2.e1c998aefe9a193e7328.mp4",
@@ -37,11 +37,11 @@
     "static/media/catalog-3.png": "/Sibmarine-react/static/media/catalog-3.69bf12d3b76eb61e9dce.png",
     "static/media/README.md": "/Sibmarine-react/static/media/README.c50abc091eb7a5639250.md",
     "index.html": "/Sibmarine-react/index.html",
-    "main.6e44acd2.css.map": "/Sibmarine-react/static/css/main.6e44acd2.css.map",
-    "main.7a407b2d.js.map": "/Sibmarine-react/static/js/main.7a407b2d.js.map"
+    "main.a68a8d30.css.map": "/Sibmarine-react/static/css/main.a68a8d30.css.map",
+    "main.ab2f7c9e.js.map": "/Sibmarine-react/static/js/main.ab2f7c9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e44acd2.css",
-    "static/js/main.7a407b2d.js"
+    "static/css/main.a68a8d30.css",
+    "static/js/main.ab2f7c9e.js"
   ]
 }
