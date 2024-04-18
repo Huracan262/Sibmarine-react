@@ -9,6 +9,7 @@ import AboutProjects from './AboutProjects'
 import AboutNews from './AboutNews'
 import AboutMain from './AboutMain'
 import AboutTeam from './AboutTeam'
+import AboutContacts from './AboutContacts'
 
 function PageAbout() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function PageAbout() {
               <Route index element={<AboutMain />} />
               <Route path="news" element={<AboutNews />} />
               <Route path="projects" element={<AboutProjects />} />
+              <Route path="contacts" element={<AboutContacts />} />
               <Route path="team" element={<AboutTeam />} />
               <Route path="*" element={<AboutMain />} />
             </Routes>
