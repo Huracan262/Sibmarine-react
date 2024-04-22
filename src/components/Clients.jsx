@@ -9,7 +9,7 @@ function Clients() {
   return (
     <section className={styles.clients}>
       <div className={styles.wrapper}>
-        <Title to="projects">Наши клиенты</Title>
+        <Title to="about/projects">Наши клиенты</Title>
 
         <div className={styles.container}>
           <p className={styles.description}>Клиенты - основа любой компании. Именно благодаря им мы растём,

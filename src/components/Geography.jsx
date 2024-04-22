@@ -6,7 +6,7 @@ function Geography() {
   return (
     <section className={styles.geography}>
       <div className={styles.wrapper}>
-        <Title to="projects">География работ</Title>
+        <Title to="about/projects">География работ</Title>
 
         <p className={styles.description}>CибМарин - один из лидеров в производстве и поставке
           радиоэлектронных средств навигации,

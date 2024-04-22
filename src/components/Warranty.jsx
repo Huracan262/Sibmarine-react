@@ -7,7 +7,7 @@ function Warranty() {
   return (
     <section className={styles.warranty}>
       <div className={styles.wrapper}>
-        <Title to="licenses">Гарантии</Title>
+        <Title to="about/licenses">Гарантии</Title>
 
         <ul className={styles.list}>
           {WARRANTY_LIST.map(item => (

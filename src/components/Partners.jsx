@@ -7,7 +7,7 @@ function Partners () {
   return (
     <section className={styles.partners}>
       <div className={styles.wrapper}>
-        <Title to="projects">Партнеры</Title>
+        <Title to="about/projects">Партнеры</Title>
 
         <ul className={styles.list}>
           <Marquee speed="30" gradient="gradient" gradientColor="#162639" style={{overflow: 'clip'}} >
