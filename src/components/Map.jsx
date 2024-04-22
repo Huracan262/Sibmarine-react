@@ -1,10 +1,10 @@
 import { useContext, useEffect } from 'react'
-import MapContext from '../contexts/MapContext'
 import { BsX } from "react-icons/bs"
+import MapContext from '../contexts/MapContext'
 import styles from '../styles/map.module.scss'
 
 function Map() {
-  const {toggleMap, setToggleMap} = useContext(MapContext)
+  const { toggleMap, setToggleMap } = useContext(MapContext)
 
   useEffect(() => {
     const handleKeyDown = (event) => {

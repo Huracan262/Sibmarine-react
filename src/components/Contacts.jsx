@@ -3,7 +3,7 @@ import styles from '../styles/contacts.module.scss'
 import MapContext from '../contexts/MapContext'
 
 function Contacts() {
-  const {toggleMap, setToggleMap} = useContext(MapContext)
+  const { toggleMap, setToggleMap } = useContext(MapContext)
 
   return (
     <address className={styles.contacts}>

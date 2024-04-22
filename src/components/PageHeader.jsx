@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 // todo Изменить иконки на React-Icons
 import { Menu, MenuOpen } from  '@mui/icons-material'
@@ -8,11 +8,14 @@ import Logo from '../UI/Logo'
 import MainNavigation from './MainNavigation'
 import Map from './Map'
 import styles from '../styles/pageHeader.module.scss'
+import ApplyFormModal from './ApplyFormModal'
+import ApplyFormModalContext from '../contexts/ApplyFormModalContext'
 
 function PageHeader() {
   const location = useLocation()
 
-  const [mobileMenu, setMobileMenu] = useState(true)
+  const { setToggleModal } = useContext(ApplyFormModalContext)
+  const [ mobileMenu, setMobileMenu ] = useState(true)
 
   function toggleMobileMenu() {
     setMobileMenu(!mobileMenu)
@@ -33,8 +36,8 @@ function PageHeader() {
 
           <div className={styles.rows}>
             <div className={styles.container}>
-              <Contacts/>
-              <Button>Оставить заявку</Button>
+              <Contacts />
+              <Button onClick={setToggleModal}>Оставить заявку</Button>
             </div>
 
             <MainNavigation className={`${styles.navigation} ${mobileMenu && styles.mobileMenuClose}`}/>
@@ -43,6 +46,7 @@ function PageHeader() {
       </header>
 
       <Map />
+      <ApplyFormModal />
     </>
   )
 }
