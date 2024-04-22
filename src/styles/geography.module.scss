@@ -114,6 +114,7 @@
 }
 
 .city {
+  width: max-content;
   margin-left: 15px;
   opacity: 0.6;
 }
@@ -140,6 +141,8 @@
   left: 0;
 
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  white-space: break-spaces;
   color: $color-white;
 
   background-color: fade-out(black, 0.6);

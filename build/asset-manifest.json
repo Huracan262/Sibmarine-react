@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Sibmarine-react/static/css/main.a68a8d30.css",
-    "main.js": "/Sibmarine-react/static/js/main.ab2f7c9e.js",
+    "main.css": "/Sibmarine-react/static/css/main.bc5943ff.css",
+    "main.js": "/Sibmarine-react/static/js/main.f08ef5da.js",
     "static/media/background.mp4": "/Sibmarine-react/static/media/background.3f9ccebd5023276d9fed.mp4",
     "static/media/backgroundыыы).mp4": "/Sibmarine-react/static/media/backgroundыыы).68c795e59e1e92a41eb8.mp4",
     "static/media/Test2.mp4": "/Sibmarine-react/static/media/Test2.e1c998aefe9a193e7328.mp4",
@@ -30,18 +30,20 @@
     "static/media/radio.jpg": "/Sibmarine-react/static/media/radio.2c9c447fd6e9caeb6e64.jpg",
     "static/media/drop.png": "/Sibmarine-react/static/media/drop.c767be6c58248153f99f.png",
     "static/media/mechanic.jpg": "/Sibmarine-react/static/media/mechanic.af81ef62c149fefb99e5.jpg",
+    "static/media/frame.png": "/Sibmarine-react/static/media/frame.763be6de961cced5f36f.png",
     "static/media/logo-footer.svg": "/Sibmarine-react/static/media/logo-footer.bde06b001a667b5b8b21aed906b2b40b.svg",
     "static/media/logo.svg": "/Sibmarine-react/static/media/logo.b2f9412eafb5be92947e20e56f47dcde.svg",
     "static/media/catalog-1.png": "/Sibmarine-react/static/media/catalog-1.553277f9cf74994b1faf.png",
     "static/media/catalog-2.png": "/Sibmarine-react/static/media/catalog-2.fd80fddb9ef5cc98758a.png",
     "static/media/catalog-3.png": "/Sibmarine-react/static/media/catalog-3.69bf12d3b76eb61e9dce.png",
+    "static/media/undefined.png": "/Sibmarine-react/static/media/undefined.95a7ad4b2c446baa76eb.png",
     "static/media/README.md": "/Sibmarine-react/static/media/README.c50abc091eb7a5639250.md",
     "index.html": "/Sibmarine-react/index.html",
-    "main.a68a8d30.css.map": "/Sibmarine-react/static/css/main.a68a8d30.css.map",
-    "main.ab2f7c9e.js.map": "/Sibmarine-react/static/js/main.ab2f7c9e.js.map"
+    "main.bc5943ff.css.map": "/Sibmarine-react/static/css/main.bc5943ff.css.map",
+    "main.f08ef5da.js.map": "/Sibmarine-react/static/js/main.f08ef5da.js.map"
   },
   "entrypoints": [
-    "static/css/main.a68a8d30.css",
-    "static/js/main.ab2f7c9e.js"
+    "static/css/main.bc5943ff.css",
+    "static/js/main.f08ef5da.js"
   ]
 }
