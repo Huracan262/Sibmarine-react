@@ -68,8 +68,8 @@ function Service() {
           className={`${styles.descriptionList} ${toggleList && styles.listOn}`}
           onClick={handleDescriptionItemClick}
         >
-          {current.submenu.map((item) => (
-            <li className={styles.descriptionItem} key={item.id}>
+          {current.submenu.map(item => (
+            <li className={styles.descriptionItem} key={item.title}>
               <a className={styles.descriptionLink}>{item.title}</a>
             </li>
           ))}

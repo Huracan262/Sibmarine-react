@@ -19,7 +19,7 @@ function Geography() {
           <ul className={styles.points}>
             {GEOGRAPHY_LIST.map(item => {
               return (
-                <li className={styles.container} style={{top: `${item.yСoordinate}px`, left:`${item.хСoordinate}px`}}>
+                <li className={styles.container} style={{top: `${item.yСoordinate}px`, left:`${item.хСoordinate}px`}} key={item.city}>
                   <div className={styles.point}></div>
                   <div className={styles.pointDescription}>{item.description}</div>
                   <span className={styles.city}>{item.city}</span>
