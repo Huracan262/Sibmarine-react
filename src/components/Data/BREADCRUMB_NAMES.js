@@ -4,7 +4,8 @@ const BREADCRUMB_NAMES = {
   about: 'О компании',
   news: 'Новости',
   projects: 'Наши проекты',
-  team: 'Наша команда'
+  team: 'Наша команда',
+  ['privacy-policy']: 'Политика конфиденциальности'
 }
 
 export default BREADCRUMB_NAMES

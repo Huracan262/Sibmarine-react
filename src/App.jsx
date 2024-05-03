@@ -9,6 +9,7 @@ import PageCatalog from './components/PageCatalog'
 import PageAbout from './components/PageAbout'
 import PageAbout2 from './components/PageAbout2'
 import PageService from './components/PageService'
+import PrivacyPolicy from './components/PrivacyPolicy'
 import './styles/app.scss'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
               <Route path="about/*" element={<PageAbout />} />
               <Route path="about2/*" element={<PageAbout2 />} />
               <Route path="service" element={<PageService />} />
+              <Route path="privacy-policy" element={<PrivacyPolicy />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
           </Routes>

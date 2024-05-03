@@ -1,0 +1,31 @@
+@import "variables";
+@import "wrapper";
+@import "mixins";
+
+.main {
+  color: $color-main;
+  text-align: justify;
+  background-color: $color-white;
+}
+
+.h1 {
+  margin-top: 80px;
+  margin-bottom: 40px;
+
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.text {
+  margin-bottom: 40px;
+}
+
+.end {
+  padding-bottom: 180px;
+}
