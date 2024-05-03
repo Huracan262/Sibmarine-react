@@ -7,6 +7,7 @@ import PageMain from './components/PageMain'
 import PageNotFound from './components/PageNotFound'
 import PageCatalog from './components/PageCatalog'
 import PageAbout from './components/PageAbout'
+import PageAbout2 from './components/PageAbout2'
 import PageService from './components/PageService'
 import './styles/app.scss'
 
@@ -23,6 +24,7 @@ function App() {
               <Route index element={<PageMain />} />
               <Route path="catalog" element={<PageCatalog />} />
               <Route path="about/*" element={<PageAbout />} />
+              <Route path="about2/*" element={<PageAbout2 />} />
               <Route path="service" element={<PageService />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
