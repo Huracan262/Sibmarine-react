@@ -176,3 +176,147 @@
     font-size: 40px;
   }
 }
+
+
+
+.teamList {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+
+.teamItem {
+  width: 400px;
+  height: 400px;
+
+}
+
+.teamFigure {
+  display: flex;
+  flex-direction: column;
+}
+
+.teamFigcaption {
+
+}
+
+.teamName {
+
+}
+
+.teamDescription {
+
+}
+
+.teamImg {
+  order: -1;
+  height: auto;
+}
+
+
+
+.write {
+  padding-bottom: 150px;
+
+  .wrapper {
+    padding: 60px;
+
+    color: $color-white;
+
+    background-color: $color-b-one;
+  }
+}
+
+.writeTitle {
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.writeContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+}
+
+.writeForm {
+  width: 100%;
+}
+
+.writeBlock {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 20px;
+
+  font-size: 20px;
+  color: $color-white;
+
+  border: none;
+  border-bottom: 1px solid fade-out($color-white, 0.7);
+  background-color: transparent;
+
+  outline: none;
+
+  &::placeholder {
+    font-family: "Roboto", sans-serif;
+    color: fade-out($color-white, 0.5);
+  }
+
+  &:focus {
+    border-bottom: 1px solid fade-out($color-b-three, 0.5);
+  }
+}
+
+.writeButton {
+  margin: 40px 0 0;
+  padding: 10px 40px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  //text-transform: uppercase;
+  color: $color-main;
+
+  background-color: $color-white;
+  border: none;
+}
+
+.writeList {
+  margin-left: 40px;
+  display: inline-flex;
+  gap: 10px
+}
+
+.writeItem {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background-color: $color-white;
+}
+
+.writeLink {
+  position: relative;
+  top: 3px;
+  font-size: 25px;
+  color: $color-main;
+}
+
+.writePicture {
+  width: 100%;
+  outline: 1px solid red;
+}
+
+.writeImg {
+  width: 100%;
+}
