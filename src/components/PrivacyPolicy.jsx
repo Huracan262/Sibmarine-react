@@ -1,7 +1,12 @@
+import { useEffect } from 'react'
 import Breadcrumb from './Breadcrumb'
 import styles from '../styles/PrivacyPolicy.module.scss'
 
 function PrivacyPolicy() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <main className={styles.main}>
       <div className={styles.wrapper}>

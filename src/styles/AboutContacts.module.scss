@@ -2,12 +2,100 @@
 @import "wrapper";
 @import "mixins";
 
-.list {
-  display: flex;
-  flex-direction: column;
+.contacts {
+  color: $color-main;
+  background-color: $color-white;
+}
+
+.wrapper {
+
+}
+
+.h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-bottom: 60px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  .tr {
+    height: 40px;
+    font-weight: 600;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid fade-out($color-b-one, 0.7);
+    }
+
+  }
+
+  .th {
+    width: 250px;
+
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .td {
+  }
+}
+
+.map {
+  width: 100%;
+  margin-bottom: 150px;
+  border: 1px solid fade-out($color-b-one, 0.5);
+}
+
+.buttonDownload {
+  text-align: right;
+}
+
+.download {
+  padding: 20px 40px;
+  display: inline-block;
+
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $color-white;
+
+  background-color: $color-b-one;
+}
+
+.icon {
+  color: $color-white;
+  margin-right: 20px;
 }
 
 .link {
   color: inherit;
   text-decoration: none;
+}
+
+.socialsList {
+  display: flex;
+  gap: 10px
+}
+
+.socialsItem {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $color-b-one;
+}
+
+.socialsLink {
+  margin-bottom: -3px;
+  color: $color-white;
 }
